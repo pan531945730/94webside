@@ -1,0 +1,139 @@
+body{
+    background-color: #ce3439;
+}
+.rank-mod{
+    position: relative;
+    min-height: 37px;
+}
+.spr-pro{
+    position: relative;
+}
+.rule{
+    position: absolute;
+    top: 9%;
+    left: 1%;
+    width: 18%;
+    height: 17%;
+    background: url(../../../img/springRaise/rule-ico.png) no-repeat;
+    background-size: contain;
+    transform-origin: top;
+    -webkit-animation: roate 1.5s linear infinite;
+   animation: roate 1.5s linear infinite; 
+}
+@-webkit-keyframes roate {
+    0% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+    }
+}
+@keyframes roate {
+    0% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+    }
+}
+.rank-mod ul{
+    display: none;
+}
+.rank-info{
+    margin: -22px auto 20px;
+    width: 94%;
+    max-height: 164px;
+    background-color: #e5f2d3;
+    border-radius: 10px;
+    border: 2px solid #c2b064;
+    overflow: hidden;
+}
+.rank-info ul{
+    display: block;
+    padding: 0 10px;
+}
+.rank-info li {
+    display: -webkit-box;
+    -webkit-box-align:center;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px dashed #b6b293;
+}
+.rank-info li span{
+    display: block;
+    color: #591d0e;
+    font-size: 1.4rem;
+}
+.head{
+    display: block;
+    border-radius: 100%;
+}
+.name{
+    padding-left: 5px;
+    width: 44px;
+}
+.des{
+    -webkit-box-flex:1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.animate {
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; 
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.rule-dlg{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.rule-dlg-info{
+    margin: 0 4%;
+    padding: 20px 7px 10px;
+    line-height: 26px;
+    background-color: #e9462c;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.rule-dlg-info li span{
+    color: #fff600;
+}
+.rule-dlg-info li p{
+    line-height: 22px;
+}
+.rule-dlg-bd{
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    background: url(../../../img/springRaise/rule-dlg-bd.png) no-repeat;
+    background-size: contain;
+}

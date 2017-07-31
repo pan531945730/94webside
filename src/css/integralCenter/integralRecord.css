@@ -1,0 +1,86 @@
+html {
+    background-color: #f2f2f2;
+}
+.ic-head {
+    position: relative;
+    padding: 40px 0;
+    background: url(../../img/ic-head.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.ic-head li{
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+.ic-head li p{
+    font-size: 1.4rem;
+}
+.ic-num{
+    font-size: 3.0rem;
+    color: #fff;
+    padding: 0 5px 0 21px;
+}
+.ic-time{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: #fce8cf;
+}
+.ir-info{
+    position: relative;
+    padding: 0 15px;
+}
+.ir-info:after{
+    position: absolute;
+    display: block;
+    content: '';
+    border-left: 1px solid #e6e6e6; 
+    left: 30px;
+    top: 30px;
+    bottom: 52px;
+}
+.ir-info li{
+    display: -webkit-box;
+    background-color: #fdf5ea;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-top: 10px;
+}
+.ir-ico{
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    border:1px solid #f9971c;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.ir-tit{
+    padding-left: 10px;
+    -webkit-box-flex:1;
+    line-height: 22px;
+}
+.ir-tit p{
+    font-size: 1.4rem;
+}
+.ir-tit span{
+    display: block;
+    color: #b2b2b2;
+}
+.ir-num{
+    margin-top: 14px;
+    font-size: 1.4rem;
+    color: #ff4040;
+}
+.reduce{
+    color: #3bc21c;
+}
+.bot{
+    display: none;
+    margin-top: 5px;
+    color: #b2b2b2;
+    text-align: center;
+}

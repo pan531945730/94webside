@@ -1,0 +1,22 @@
+{
+  "name": "webpack_94bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "css-loader": "^0.25.0",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3"
+  }
+}

@@ -1,0 +1,12 @@
+.is-info{
+    padding: 15px;
+    line-height: 24px;
+}
+.is-info h2{
+    font-size: 1.4rem;
+    color: #1a1a1a;
+}
+.is-info p{
+    margin-bottom: 20px;
+    color: #575757;
+}

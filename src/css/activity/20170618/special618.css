@@ -1,0 +1,53 @@
+body{
+    background: -webkit-linear-gradient(#9b58ed, #f7c800); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#9b58ed, #f7c800); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#9b58ed, #f7c800); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#9b58ed, #f7c800); /* 标准的语法 */
+}
+.ac-cont{
+    position: relative;
+    padding-bottom: 10px;
+}
+.ac-unlock{
+    position: absolute;
+    top: 30.5%;
+    right: 25%;
+    width: 55%;
+    height: 30%;
+}
+.unlock{
+    -webkit-animation: rock 1s linear infinite;
+    animation: rock 1s linear infinite;
+}
+@-webkit-keyframes rock{
+    0%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+    50%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+}
+@keyframes rock{
+    0%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+    50%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+}
+
+.toast{
+    background: rgba(255,255,255,.7);
+}

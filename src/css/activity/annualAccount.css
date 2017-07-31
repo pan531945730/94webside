@@ -1,0 +1,36 @@
+.aa-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 2px;
+    border:2px solid #28000B;
+    background-color: #FF9E17;
+    padding: 2px;
+    transition-duration: 0.5s;
+    right: 0px;
+    left: auto;
+    box-shadow: none;
+    transform: none;
+}
+.aa-cont{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    border:2px solid #28000B;
+    background-color: #F71306;
+}
+.bind-sta{
+    transition-duration: .5s;
+    transform: rotateY(108deg);
+    transform-origin: 0 100% 0;
+    transition-duration: 0.5s; 
+    opacity: 1; 
+    transform: rotateY(0deg);
+    transform-origin: 100% 100% 0px; 
+    box-shadow: none;
+    left: 0px;
+    right: 0px;
+}

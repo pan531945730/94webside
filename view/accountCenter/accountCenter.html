@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>94bank 移动理财管家——账户中心</title>
+    <meta name="keywords" content="94bank,银行宝，银宝宝，理财产品，理财软件，掌上理财,p2p理财产品，理财产品商城，互联网理财">
+    <meta name="description" content="94bank是移动理财管家,为用户提供最高25倍银行存款利息!1元起购!8道安全保障,100%本息保障!随用随取!好收益,就看94bank!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.94bank.com/public/app/touch-icon57.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.94bank.com/public/app/touch-icon72.png?v=20160601">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.94bank.com/public/app/touch-icon114.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.94bank.com/public/app/touch-icon144.png?v=@{@WorkContext.Version}" />
+    <link rel="shortcut icon" href="http://mp.94bank.com/favicon.ico?v=0b53de0092c64465479fe60efd21" type="image/x-icon">
+    <link rel="stylesheet" href="../../dist/accountCenter/accountCenter.css">
+</head>
+<body>
+    <div class="ac-cont">
+        <div class="ac-head">
+            <div class="ac-tit">
+                <i></i>
+                <span>总资产（元）<em class="ac-eye"></em></span>
+                <i></i>
+            </div>
+            <p class="ac-allprice"></p>
+            <span class="ac-ico"></span>
+            <ul class="ac-base">
+                <li>
+                    <p>账户余额</p>
+                    <span id="zhye"></span>
+                </li>
+                <li>
+                    <p>昨日收益</p>
+                    <span id="zrsy"></span>
+                </li>
+                <li>
+                    <p>累计收益</p>
+                    <span id="ljsy"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="ac-handle">
+            <a href="javascript:void(0);" class="withdraw">我要提现</a>
+            <a href="javascript:void(0);" class="recharge">我要充值</a>
+        </div>
+        <div class="ac-info">
+            <a href="javascript:void(0);" class="jxlc no-arrow">
+                <label><i></i>精选理财</label>
+                <span></span>
+            </a>
+            <a href="javascript:void(0);" class="gj">
+                <label><i></i>94管家</label>
+                <span></span>
+            </a>
+            <a href="javascript:void(0);" class="jf">
+                <label><i></i>我的积分</label>
+                <span></span>
+            </a>
+            <a href="../Order/Coupon" class="yhq">
+                <label><i></i>我的优惠券</label>
+                <span></span>
+            </a>
+            <a href="/Order/Bill" class="zd">
+                <label><i></i>我的账单</label>
+            </a>
+        </div>
+        <div class="foot-bar">
+            <a href="https://itunes.apple.com/us/app/94bank-bu-shi-yin-xing-de94bank/id878005164?l=zh&ls=1&mt=8">下载APP</a>
+            <a href="javascript:void(0);" id="contact_us">联系我们</a>
+            <a href="/Product/ProductList">理财中心</a>
+        </div>
+        <div class="load">
+            <span></span>
+        </div>
+        <a href="/Member/Friend" class="ac-invite">
+            <img draggable="true" id="invite" src="../../lib/img/float-icon.png" width="56" height="auto">
+        </a>
+    </div>
+    <div class="ac-page">
+        <div class="ac-mod">
+            <header>
+                <img class="ac-pic" src="../../lib/img/ac-user.png" width="50" height="50">
+                <p id="ac_tel">137****5987</p>
+            </header>
+            <div class="ac-main">
+                <a href="javascript:void(0);" class="smrz">
+                    <label><i></i>实名认证</label>
+                    <span>未认证</span>
+                </a>
+                <a href="javascript:void(0);" class="yhk">
+                    <label><i></i>我的银行卡</label>
+                    <span>完善信息</span>
+                </a>
+                <a href="javascript:void(0);" class="jymm">
+                    <label><i></i>修改交易密码</label>
+                </a>
+                <a href="javascript:void(0);" class="dlmm">
+                    <label><i></i>修改登录密码</label>
+                </a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="ac-exit"><i></i>退出登录</a>
+    </div>
+    <div class="unlogin-dialog">
+        <div class="unlogin-cont">
+            <img src="../../lib/img/unlogin.png" width="100%" height="auto" alt="未登录">
+            <a href="/member/regist" class="ac-reg"></a>
+            <a href="/member/login" class="ac-log"></a>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../../lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../../dist/accountCenter/accountCenter.js"></script>
+
+</body>
+</html>

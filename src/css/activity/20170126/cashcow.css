@@ -1,0 +1,334 @@
+body{
+    background: url(../../../img/activity02bg.png) repeat;
+    background-size: contain;
+}
+.tit{
+    margin: 2% 0 -4% 0;
+}
+.rotate-mod{
+    margin: 0 15%;
+}
+.rotate{
+    -webkit-animation: roate 1s linear infinite;
+    animation: roate 1s linear infinite;
+}
+
+@-webkit-keyframes roate {
+    0% {
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+        -webkit-transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+    }
+}
+@keyframes roate {
+    0% {
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+        -webkit-transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+    }
+}
+.btn-mod{
+    position: relative;
+    z-index: 1;
+    margin: -10% 11% -10% 15%;
+}
+.shake-redbag{
+    position: absolute;
+    width: 42%;
+    height: 64%;
+    top: 22%;
+    left: 0%;
+}
+.shake-fruit{
+    position: absolute;
+    width: 41%;
+    height: 64%;
+    top: 22%;
+    left: 55%;
+}
+.time-mod{
+    display: none;
+    margin: 8% 0 -16%;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+.time-countdown{
+    color: #fff100;
+    font-size: 2.4rem;
+}
+.rule-mod{
+    position: relative;
+    margin: 10% 9% 0;
+}
+.rule{
+    position: absolute;
+    width: 37%;
+    height: 16%;
+    top: 26%;
+    left: 29%;
+}
+.rule-mod p{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    bottom: 3%;
+}
+.rule-wrap{
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background-color: #7d0000;
+    padding: 2px;
+}
+.rule-info{
+    border:4px solid #ffdc4c;
+    background-color: #e83538;
+    padding: 5px;
+    color: #fff;
+    line-height: 18px;
+}
+@media screen and (max-height: 568px) {
+    .rule-info{
+        line-height: 14px;
+        padding: 2px;
+    }
+}
+.rule-head{
+    display: -webkit-box;
+    width: 108%;
+    position: relative;
+    left: -4%;
+    top: -1px;
+}
+.rule-head p{
+    -webkit-box-flex:1;
+    border:2px solid #7d0000;
+    background-color: #ffa632;
+    height: 12px;
+}
+.rule-head em{
+    position: absolute;
+    content: '';
+    border:2px solid #7d0000;
+    background-color: #ffa632;
+    width: 16px;
+    height: 23px;
+    top: -6px;
+}
+.hd-lt{
+    left: 0;
+}
+.hd-rt{
+    right: 0;
+}
+.rule-head:before,.rule-head em:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 1px;
+    background-color: #ffdc4c;
+}
+.rule-head:before{
+    height: 7px;
+}
+.rule-head em:before{
+    height: 10px;
+}
+.f01{
+    color: #f0ff00;
+}
+.rl-ul li{
+    display: -webkit-box;
+}
+.rl-ul div{
+    -webkit-box-flex:1;
+}
+.rule-tit{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    margin: 5px 4%;
+    font-size: 1.4rem;
+    color: #f0ff00;
+}
+.rule-tit:before,.rule-tit:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../../../img/rl-ico.png) no-repeat;
+    background-size: 20px;
+}
+.rule-tit:before{
+    margin-right: 5px;
+}
+.rule-tit:after{
+    margin-left: 5px;
+}
+.rule-about{
+    margin-top: 10px;
+    border:1px solid #f0ff00;
+    padding: 0 5px 4px;
+}
+.at-tit{
+    font-size: 1.4rem;
+    color: #f0ff00;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    height: 12px;
+}
+.at-tit span{
+    position: relative;
+    top: -10px;
+    background-color: #e83538;
+    padding: 0 5px;
+}
+.at-info li{
+    display: -webkit-box;
+}
+.at-info em{
+    color: #f0ff00;
+    margin-right: 5px;
+}
+.at-info div{
+    -webkit-box-flex:1;
+}
+.win-prize,.sta-dlg{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    
+}
+@media screen and (orientation:landscape){
+    .win-prize,.sta-dlg{
+        left: 30%;
+        right: 30%;
+    }
+}
+.prize-tit{
+    position: absolute;
+    top: 37%;
+    left: 38%;
+    font-size: 1.9rem;
+    color: #e57100;
+}
+.prize-number{
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    font-size: 2.2rem;
+    color: #fff000;
+    font-weight: bold;
+}
+.win-load{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.redbag{
+    position: absolute;
+    z-index: 11;
+    margin: 0 2%;
+}
+.tree{
+    position: absolute;
+    z-index: 10;
+    margin: 34% 23% 0 27%;
+}
+.load{
+    -webkit-animation: roate 1s linear infinite;
+    animation: roate 1s linear infinite;
+}
+.load-bg{
+    margin-top:100%;
+}
+.load-fall{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 80%;
+    height: 62%;
+    z-index: 10;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../../../img/fall.png);
+    -webkit-animation: fall 18s linear infinite;
+    animation: fall 18s linear infinite;
+}
+
+@-webkit-keyframes fall {
+    0% {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    50% {
+        background-position-y: 40rem;
+    }
+
+    100% {
+        background-position-y: 80rem;
+    }
+}
+
+
+@keyframes fall {
+    0% {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    50% {
+        background-position-y: 40rem;
+    }
+
+    100% {
+        background-position-y: 80rem;
+    }
+}
+.time-ico{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../../img/time-ico.png);
+    background-size: 14px 14px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.dlg-time{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 7px;
+    color: #bb3e3c;
+    padding: 0 2px;
+    vertical-align: middle;
+}

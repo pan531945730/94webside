@@ -1,0 +1,39 @@
+.newyear-cont{
+    position: relative;
+}
+.newyear-btn{
+    position: absolute;
+    top: 47%;
+    left: 38%;
+    width: 24%;
+    height: 11%;
+}
+.ny-dlg{
+    display: none;
+    position:absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-close{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 13%;
+    height: 13%;
+}
+.dlg-tit{
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #fff;
+}
+.dlg-tit span{
+    font-size: 5.0rem;
+    color: #fff600;
+}

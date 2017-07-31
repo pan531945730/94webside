@@ -1,0 +1,476 @@
+body{
+    background-color: #fdedc4;
+}
+.ac-fir,.ac-third,.ac-four{
+    position: relative;
+}
+.ac-fir span{
+    position: absolute;
+    left: 30%;
+    bottom: 6%;
+    width: 40%;
+    height: 16%;
+}
+.fir-draw{
+    background: url(../../../img/labourDay/fir-draw.png) no-repeat;
+    background-size: contain;
+}
+.fir-draw_active{
+    background: url(../../../img/labourDay/fir-draw_active.png) no-repeat;
+    background-size: contain;
+}
+.ac-third em{
+    position: absolute;
+    right: 2%;
+    width: 20%;
+    height: 9%;
+}
+.rule{
+    top: 5.5%;
+}
+.four-rule{
+    position: absolute;
+    top: 9%;
+    right: 2%;
+    width: 20%;
+    height: 24%;
+}
+.rank-info .noneinfo{
+    padding: 20px 0;
+}
+.noneinfo{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.prize{
+    top:14.5%;
+}
+.draw-one,.draw-all,.draw-all-no{
+    position: absolute;
+    bottom: 15%;
+    width: 32%;
+    height: 15%;
+}
+.draw-one{
+    left: 14%;
+    background: url(../../../img/labourDay/draw-one.png) no-repeat;
+    background-size: contain;
+}
+.draw-all{
+    right: 15%;
+    background: url(../../../img/labourDay/draw-all.png) no-repeat;
+    background-size: contain;
+}
+.draw-all-no{
+    right: 15%;
+    background: url(../../../img/labourDay/draw-all.png) no-repeat;
+    background-size: contain;
+}
+.besides{
+    display: none;
+    position: absolute;
+    left: 14%;
+    top: 86%;
+    width: 66%;
+    padding: 0 2%;
+    line-height: 18px;
+    border: 2px solid #ffc96c;
+    border-radius: 8px;
+    color: #8a4400;
+    text-align: center;
+}
+.besides span{
+    font-size: 1.4rem;
+    color: #e00404;
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.wrap-dlg{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.prize-dlg{
+    left: 6%;
+    right: 6%;
+}
+.bigprize-dlg,.prize-dlg{
+    -webkit-transform: translate(0, -60%);
+    transform: translate(0, -60%);
+}
+.prize-dlg .prize-dlg-box{
+    padding: 25px 0 15px;
+}
+.bigprize-dlg .prize-dlg-box{
+    width: 296px;
+    padding: 15px 6px;
+}
+.oneprize-dlg .prize-dlg-box{
+    padding: 20px 0 15px;
+}
+.prize-dlg img{
+    margin: 0 auto;
+}
+.prize-dlg-tit{
+    position: relative;
+    padding-top: 124px;
+    margin: 0 auto;
+    width: 242px;
+    height: 39px;
+    background: url(../../../img/labourDay/prize-dlg-tit.png) no-repeat;
+    background-size: contain;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e00404;
+    text-align: center;
+}
+.prize-dlg-box{
+    margin: -15px auto 0;
+    width: 262px;
+    min-height: 200px;
+    background-color: #fffbbd;
+    border-radius: 10px;
+}
+.firprize-dlg{
+    -webkit-transform: translate(0, -55%);
+    transform: translate(0, -55%);
+}
+.fir-dlg-tit{
+    margin: 0 auto;
+    width: 151px;
+    height: 149px;
+    background: url(../../../img/labourDay/fir-dlg-tit.png) no-repeat;
+    background-size: contain;
+}
+.firprize-dlg-box{
+    margin: -57px auto 0;
+    width: 300px;
+    min-height: 275px;
+    padding: 15px 0;
+    background-color: #fffbbd;
+    border-radius: 10px;
+}
+.firprize-mod{
+    margin: 0 auto;
+    width: 273px;
+    min-height: 227px;
+    background: url(../../../img/labourDay/firprize-bg.png) no-repeat top center;
+    background-size: 273px 227px;
+}
+.firprize-toggle{
+    margin: -22px auto 0;
+    color: #fff;
+}
+.firprize{
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+.firprize:after{
+    display: block;
+    content: '';
+    height: 7px;
+    width: 7px;
+    border: 2px solid #fff;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: 5px;
+}
+.toggle .firprize:after{
+    border-width: 1px 0 0 1px;
+    margin-top: 4px;
+}
+.firprize-rule{
+    display: none;
+    background-color: #fc7100;
+    border-radius: 0 0 5px 5px;
+    width: 236px;
+    padding: 5px 10px;
+    line-height: 22px;
+    margin-left: 26px;
+}
+.toggle .firprize-rule{
+    display: block;
+}
+.dlg-btn{
+    display: block;
+    margin: 20px auto 0;
+    width: 138px;
+    line-height: 36px;
+    background-color: #e00404;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
+.prize-get{
+    padding-bottom: 10px;
+    color: #c36d00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.bigprize-mod{
+    position: relative;
+    height: 300px;
+}
+.bigprize-mod span{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+}
+.prize1{
+    top: 189px;
+    left: 22px;
+}
+.prize2{
+    top: 227px;
+    left: 86px;
+}
+.prize3{
+    top: 229px;
+    left: 162px;
+}
+.prize4{
+    top: 181px;
+    left: 218px;
+}
+.prize5{
+    top: 110px;
+    left: 230px;
+}
+.prize6{
+    top: 40px;
+    left: 216px;
+}
+.prize7{
+    top: 2px;
+    left: 156px;
+}
+.prize8{
+    top: 0px;
+    left: 82px;
+}
+.prize9{
+    top: 49px;
+    left: 24px;
+}
+.prize10{
+    top: 120px;
+    left: 0px;
+}
+.bigprize-mod  .prize0{
+    left: 89px;
+    top: 82px;
+    width: 128px;
+    height: 128px;
+}
+.prize-head{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #a43a00;
+    font-weight: bold;
+}
+.prize-head span{
+    padding-right: 5px;
+    font-size: 2.0rem;
+    color: #eb6100;
+}
+.oneprize-mod{
+    margin: 15px auto;
+    width: 116px;
+    height: 116px;
+}
+.jdk{
+    background: url(../../../img/labourDay/jdk.png) no-repeat;
+    background-size: contain;
+}
+.hb{
+    background: url(../../../img/labourDay/hb.png) no-repeat;
+    background-size: contain;
+}
+.xjhb{
+    background: url(../../../img/labourDay/xjhb.png) no-repeat;
+    background-size: contain;
+}
+.x9{
+    background: url(../../../img/labourDay/x9.png) no-repeat;
+    background-size: contain;
+}
+.xj1{
+    background: url(../../../img/labourDay/xj01.png) no-repeat;
+    background-size: contain;
+}
+.xj2{
+    background: url(../../../img/labourDay/xj02.png) no-repeat;
+    background-size: contain;
+}
+.xj3{
+    background: url(../../../img/labourDay/xj03.png) no-repeat;
+    background-size: contain;
+}
+.xj5{
+    background: url(../../../img/labourDay/xj05.png) no-repeat;
+    background-size: contain;
+}
+.xj8{
+    background: url(../../../img/labourDay/xj08.png) no-repeat;
+    background-size: contain;
+}
+.hb3{
+    background: url(../../../img/labourDay/hb03.png) no-repeat;
+    background-size: contain;
+}
+.hb10{
+    background: url(../../../img/labourDay/hb10.png) no-repeat;
+    background-size: contain;
+}
+.hb15{
+    background: url(../../../img/labourDay/hb15.png) no-repeat;
+    background-size: contain;
+}
+.jdk2{
+    background: url(../../../img/labourDay/jdk2.png) no-repeat;
+    background-size: contain;
+}
+.x92{
+    background: url(../../../img/labourDay/x92.png) no-repeat;
+    background-size: contain;
+}
+.lyej{
+    background: url(../../../img/labourDay/lyej.png) no-repeat center center;
+    background-size: contain;
+}
+.dzc{
+    background: url(../../../img/labourDay/dzc.png) no-repeat center center;
+    background-size: contain;
+}
+.cfj{
+    background: url(../../../img/labourDay/cfj.png) no-repeat center center;
+    background-size: contain;
+}
+.lyyx{
+    background: url(../../../img/labourDay/lyyx.png) no-repeat center center;
+    background-size: contain;
+}
+.hjz{
+    background: url(../../../img/labourDay/hjz.png) no-repeat center center;
+    background-size: contain;
+}
+.ddq{
+    background: url(../../../img/labourDay/ddq.png) no-repeat center center;
+    background-size: contain;
+}
+.cdq{
+    background: url(../../../img/labourDay/cdq.png) no-repeat center center;
+    background-size: contain;
+}
+.rule-dlg-info{
+    margin: 0 4%;
+    padding: 20px 7px 10px;
+    line-height: 26px;
+    background-color: #e9462c;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.rule-dlg-info li span{
+    color: #fff600;
+}
+.rule-dlg-info li p{
+    line-height: 22px;
+}
+.rule-dlg-bd{
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    background: url(../../../img/springRaise/rule-dlg-bd.png) no-repeat;
+    background-size: contain;
+}
+.rank-cont{
+    max-height: 304px;
+    overflow-y:auto;
+    background: url(../../../img/labourDay/rank-bg.png) no-repeat;
+    background-size: cover;
+}
+.rank-info{
+   width: 84%;
+   margin: 0 auto;
+}
+.rank-foot {
+    position: relative;
+}
+.rank-info li,.rank-mod{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    width: 100%;
+    line-height: 36px; 
+}
+.rank-mod{
+    position: absolute;
+    bottom: 10px;
+    width: 84%;
+    left: 8%;
+}
+.rank-info li span,.rank-mod span{
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center; 
+}
+.rank-info span:nth-child(1),.rank-mod span:nth-child(1){
+    width: 12%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.rank-info span:nth-child(2),.rank-mod span:nth-child(2){
+    width: 40%;
+}
+.rank-info span:nth-child(3),.rank-mod span:nth-child(3){
+   width: 25%;
+   text-align: left;
+}
+.rank-info span:nth-child(4),.rank-mod span:nth-child(4){
+    width: 27%;
+    text-align: left;
+    color: #e00404;
+    font-weight: bold;
+}
+.rank-info span:nth-child(4) em,.rank-mod span:nth-child(4) em{
+    font-size: 1.5rem;
+}
+.rank-mod span:nth-child(1){
+    color: #e00404;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.rank{
+    height: 30px;
+    line-height: 30px; 
+}
+.rank01{
+    background: url(../../../img/labourDay/rank01.png) no-repeat center center;
+    background-size: 21px;
+}
+.rank02{
+    background: url(../../../img/labourDay/rank02.png) no-repeat center center;
+    background-size: 21px;
+}
+.rank03{
+    background: url(../../../img/labourDay/rank03.png) no-repeat center center;
+    background-size: 21px;
+}

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>94鸡年步步高</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="94鸡年步步高" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <script src="../../../dist/activity/jumpGame/rem.js"></script>
+    <link href="../../../dist/activity/jumpGame/RoosterGame.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="loading">
+    <div class="box">
+        <div class="load-front"></div>
+        <div class="load-back"></div>
+        <label id="loadpercent">3%</label>
+    </div>
+</div>
+<canvas id="gameCanvas" width="640" height="1136"></canvas>
+<div class="game-bg" id="gameBg" style="background-image: url(../../../lib/jumpGame/home-bg.png);"></div>
+<div class="game-over" id="gameOver">
+    <div class="rank">
+        <span>
+            <i class="num num-5"></i>
+            <i class="num num-4"></i>
+            <i class="num num-a"></i>
+        </span>
+    </div>
+    <div class="redbag">
+        <span>
+            <i class="num num-0"></i>
+        </span>
+    </div>
+    <button></button>
+    <span class="down"></span>
+</div>
+<div class="login" id="login">
+    <div class="login-box">
+        <div class="title">
+            <span class="vip-yes on"><i></i></span>
+            <span class="vip-no"><i></i></span>
+        </div>
+        <div class="content login-con" id="logiCon">
+            <div class="form-item">
+                <div class="input-box-lg">
+                    <input type="tel" id="lMobile" placeholder="请输入您的手机号码"/>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="input-box-lg">
+                    <input type="password" id="lPassword" placeholder="请输入您的登录密码"/>
+                </div>
+            </div>
+            <div class="form-item" id="imgcod_mod" style="display:none;">
+                <span class="input-box-sm">
+                    <input type="text" id="lCodePic" placeholder="请输入图形验证码"/>
+                </span>
+                <span class="code-bg code-pic">
+                    <img id="imgSrc" src="../../../src/img/jumpGame/vip-yes.png" alt=""/>
+                    <i id="img_reload"></i>
+                </span>
+            </div>
+            <div class="btn-box">
+                <button class="cancel" id="login_cancel"></button>
+                <button class="ok" id="login_ok"></button>
+            </div>
+        </div>
+        <div class="content  register-con" id="registerCon">
+            <div class="form-item">
+                <div class="input-box-lg">
+                    <input type="tel" id="rMobile" placeholder="请输入您的手机号码"/>
+                </div>
+            </div>
+            <div class="form-item">
+                <span class="input-box-sm">
+                    <input type="text" id="rCodePic" placeholder="请输入图形验证码"/>
+                </span>
+                <span class="code-bg code-pic">
+                    <img id="reg_imgSrc" src="../../../src/img/jumpGame/vip-yes.png" alt=""/>
+                    <i id="reg_img_reload"></i>
+                </span>
+            </div>
+            <div class="form-item">
+                <span class="input-box-sm">
+                    <input type="text" id="rCodeText" placeholder="请输入手机验证码"/>
+                </span>
+                <span class="code-bg code-text">获取验证码</span>
+            </div>
+            <div class="form-item">
+                <div class="input-box-lg">
+                    <input type="password" id="rPassword" placeholder="请设置您的登录密码"/>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="cancel" id="regist_cancel"></button>
+                <button class="ok" id="regist_ok"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="share-tip" id="shareTip">
+    <img src="../../../lib/jumpGame/share-tip.png" alt="分享给好友"/>
+</div>
+<div class="how-play" id="howPlay">
+    <img src="../../../lib/jumpGame/how-play.png" alt="玩法说明"/>
+</div>
+<div class="rule" id="rule">
+    <img src="../../../lib/jumpGame/rule.png" alt="规则说明"/>
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="content">
+        <i class=""></i>
+        <span class="desc">为了更好的体验，请使用竖屏浏览</span>
+    </div>
+</div>
+<script type="text/javascript" src="../../../lib/zepto.min.js"></script>
+<script cocos src="../../../dist/activity/jumpGame/cocos.js?v=5"></script>
+<script cocos src="../../../dist/activity/jumpGame/game.js?v=5"></script>
+<script type="text/javascript" src="../../../dist/activity/jumpGame/RoosterGame.js"></script>
+</body>
+</html>

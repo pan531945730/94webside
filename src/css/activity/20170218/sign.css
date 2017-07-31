@@ -1,0 +1,238 @@
+html, body {
+    min-height: 100%;
+}
+div, span, i, em, a, button{
+    background-size: 100% 100% !important;
+}
+/*
+签到专属福利
+*/
+.sign-in{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../../img/exclusive/boon-bg.jpg) no-repeat 0 0;
+    overflow: hidden;
+}
+.sign-in .title{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.sign-in .title button{
+    width: 132px;
+    height: 32px;
+    background: none;
+    border: 0;
+    position: absolute;
+    left: 29.6%;
+    bottom: 10px;
+    text-indent: -9999px;
+}
+.sign-in .title img{
+    width: 100%;
+}
+.sign-in .btn{
+    width: 86.2%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    -webkit-animation: signBtn .5s linear infinite alternate;
+    animation: signBtn .5s linear infinite alternate;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+@-webkit-keyframes signBtn {
+    0% {
+        -webkit-transform: scale(0.95);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes signBtn {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.sign-in .btn img{
+    width: 100%;
+}
+.sign-con{
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    margin: 7.2% 0 15%;
+    background: url(../../../img/exclusive/sign-line.png) no-repeat 0 0;
+}
+.sign-con .item{
+    width: 20.53%;
+    height: 20.53%;
+    position: absolute;
+}
+.sign-con .item:nth-of-type(1){
+    left: 6.67%;
+    top: -10.27%;
+}
+.sign-con .item:nth-of-type(2){
+    left: 39.73%;
+    top: -4.53%;
+}
+.sign-con .item:nth-of-type(3){
+    left: 73.73%;
+    top: -7.73%;
+}
+.sign-con .item:nth-of-type(4){
+    left: 60%;
+    top: 17.86%;
+}
+.sign-con .item:nth-of-type(5){
+    left: 25.86%;
+    top: 18.4%;
+}
+.sign-con .item:nth-of-type(6){
+    left: 2.67%;
+    top: 39.46%;
+}
+.sign-con .item:nth-of-type(7){
+    left: 39.2%;
+    top: 43.2%;
+}
+.sign-con .item:nth-of-type(8){
+    left: 75.2%;
+    top: 40.8%;
+}
+.sign-con .item:nth-of-type(9){
+    left: 57.86%;
+    top: 66.13%;
+}
+.sign-con .item:nth-of-type(10){
+    left: 21.6%;
+    top: 66.13%;
+}
+.sign-con .item:nth-of-type(11){
+    left: 40.26%;
+    top: 89.33%;
+}
+.sign-con .item:nth-of-type(12){
+    left: 4.26%;
+    top: 89.06%;
+}
+.sign-con .lock, .sign-con .expire{
+    width: 164.94%;
+    height: 164.94%;
+    position: absolute;
+    left: -32.47%;
+    top: -32.47%;
+    background: url(../../../img/exclusive/sign-lock.png) no-repeat 0 0;
+}
+.sign-con .ing,
+.sign-con .open,
+.sign-con .ing-inner,
+.sign-con .ing-outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sign-con .ing{
+    background: url(../../../img/exclusive/sign-ing.png) no-repeat 0 0;
+}
+.sign-con .ing-inner{
+    background: url(../../../img/exclusive/sign-ing-inner.png) no-repeat 0 0;
+    -webkit-animation: ingInner 3s linear infinite;
+    animation: ingInner 3s linear infinite;
+}
+.sign-con .ing-outer{
+    background: url(../../../img/exclusive/sign-ing-outer.png) no-repeat 0 0;
+    -webkit-animation: ingOuter 3s linear infinite;
+    animation: ingOuter 3s linear infinite;
+}
+.sign-con .ing-light{
+    width: 184.42%;
+    height: 184.42%;
+    position: absolute;
+    left: -42.21%;
+    top: -42.21%;
+    background: url(../../../img/exclusive/sign-ing-light.png) no-repeat 0 0;
+    -webkit-animation: ingLight .5s linear infinite alternate;
+    animation: ingLight .5s linear infinite alternate;
+}
+.sign-con .open{
+    background: url(../../../img/exclusive/sign-open.png) no-repeat 0 0;
+}
+@-webkit-keyframes ingInner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes ingInner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes ingOuter {
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes ingOuter {
+    100% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes ingLight {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.2;
+    }
+}
+@keyframes ingLight {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.2;
+    }
+}
+.sign-gift{
+    width: 38.13%;
+    height: 47.46%;
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+    background: url(../../../img/exclusive/sign-gift.png) no-repeat 0 0;
+}
+.boon-tip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background: url(../../../img/exclusive/boon-tip.png) no-repeat 0 0;
+    display: none;
+}

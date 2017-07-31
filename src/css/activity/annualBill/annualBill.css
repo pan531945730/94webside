@@ -1,0 +1,110 @@
+/* common */
+body{width:7.5rem;background-color:#b7b6b6;color:#323232;font-size:0.48rem;}
+.red{ color:#e83825}
+.fz-small{font-size: 0.32rem;}
+.fz-big{font-size: 0.6rem !important;}
+
+/*loading*/
+.loading-box{width:4.12rem;height:8rem;margin:2rem auto 0;text-align: center;}
+.loading-img{width:4.12rem;}
+.loading-box p{padding-top:0.1rem;color: #221815}
+
+/*Page number label*/
+.page-num{position:absolute;top:0.2rem;left:2.8rem;height:0.76rem;z-index:100;width:4rem;display:block;}
+.page-num li{width:0.32rem;height:0.76rem;float:left;position:relative;}
+.page-num li span{width:0.32rem;height:0.32rem;background-color:#F4D62E;border:solid 2px #2D1104;border-radius:3px;
+	opacity:1;vertical-align:top;display:inline-block;}
+.page-num li.current,.page-num li.current b{width:0.53rem;height:0.76rem;}
+.page-num li.current span{opacity:0}
+.page-num li.current b{background:url('../../../img/annualBill/page/icon-share.png');background-size:100% 100%;position:absolute;top:-0.2rem;left:0;
+display:inline-block;}
+.tips{width:2.56rem;height: 1.66rem;background:url('../../../img/annualBill/page/turning.png') no-repeat;background-size:100% 100%;position: absolute;bottom:0.15rem;right: 0.2rem;opacity: 0.5;animation: tips linear 1s infinite }
+@keyframes tips{
+	0%{opacity: 0.5;}
+	50%{opacity: 1;}
+	100%{opacity:0.5;}
+}
+
+/*flipbook*/
+.flipbook,.flipbook-no,.share{width:100%;height:100%;text-align:center;}
+.flipbook time{background:#e62518;color:#fff;border-radius:0.4rem;padding:0.1rem 0.2rem;display:inline-block}
+.page-txt{text-align:left; width:80%;height:6rem;margin:1.2rem auto 0;}
+.page-txt p{border-bottom:dotted 1px #9d9d9e;line-height:1rem;/* font-weight:900; */}
+.page-pic{width:4.07rem;}
+.flipbook .red{font-size:1rem;vertical-align:bottom}
+.flipbook .page img{margin:auto auto;}
+/*page01*/
+.page01{
+	background-image:url('../../../img/annualBill/bg-bottom.png'),url('../../../img/annualBill/bg-main.png'),url('../../../img/annualBill/bg-middle.png');
+	background-repeat: no-repeat, no-repeat, no-repeat;  
+	background-position:center bottom, center 15px, center bottom; 
+	background-size:100% auto,100% auto,100% auto;
+	background-color:#b7b6b6;
+}
+ .flipbook .page .page01-pic01{margin:2rem auto 0;width:4.98rem;}
+/*else*/
+.page02,.page03,.page04,.page05,.page06,.page07,.page08,.page09,.page10{
+	background-image:url('../../../img/annualBill/page/bg-bottom.png'),url('../../../img/annualBill/page/bg-main.png'),url('../../../img/annualBill/page/bg-middle.png');
+	background-repeat: no-repeat, no-repeat, no-repeat;  
+	background-position: center bottom, center 15px, center bottom; 
+	background-size:100% auto,100% auto,100% auto;
+	background-color:#b7b6b6;
+}
+.page05 .page-txt,.page06 .page-txt,.page07 .page-txt,.page08 .page-txt,.page09 .page-txt{font-size: 0.32rem;}
+.page09 .red,.page10 .red{font-size: 0.6rem;}
+/*page10*/
+.page10 .page-txt{font-size: 0.3rem;margin-top: 0.8rem;}
+.page10 .page-txt p{line-height:0.6rem;}
+.page10 .page-txt span{min-width: 30%; display: inline-block;}
+.page10 .page-txt p:last-of-type span{font-size: 0.24rem;}
+.page10 .jump-share{display:block;width:100%;height:50%;position: absolute;bottom: 0;left: 0;}
+
+/*flipbook no*/
+.flipbook-no{
+	background-image:url('../../../img/annualBill/bg-bottom.png'),url('../../../img/annualBill/bg-main.png'),url('../../../img/annualBill/bg-middle.png');
+	background-repeat: no-repeat, no-repeat, no-repeat;  
+	background-position:center bottom, center top, center bottom; 
+	background-size:100% auto,100% auto,100% auto;
+	position:absolute;top:0;left:0;z-index:20;
+}
+.flipbook-no img{margin:0 auto;}
+.pic-icon{width:4.75rem; padding:1.4rem 0 1rem 0.6rem}
+.pic-txt{width:4.41rem;}
+.btn-open{width:4.06rem;height:1.08rem;background:url('../../../img/annualBill/no/btn-open.png') no-repeat;background-size:100% 100%;display: inline-block;margin-top: 1rem}
+
+/*share*/
+.page11{width:100%;height:13rem;}
+.share-head{width: 1rem;height: 1rem;border-radius: 50%;position: absolute;top:0.85rem;right: 0.85rem;border: 2px solid #fff}
+.share-exp{float:right;width:100%;color: #fff;font-size: 0.7rem; margin:2.5rem 0.4rem 0 0;text-align: right;}
+.share-exp b{width:3.6rem;height:0.9rem;display:inline-block;overflow:hidden;}
+.share-invite{float: left;margin:5.62rem 0 0 0.6rem;font-size: 0.32rem;text-align: left; clear: both}
+.share-invite b{line-height: 0.5rem;color: #fff;}
+.share-invite b span{ color: #fcff00;padding:0 0.1rem;}
+.share-invite p {margin-top:0.6rem;}
+.share-invite p span{ width: 1.5rem;display: inline-block;text-align:center;}
+.share-pic{width: 6.09rem;margin:0 auto;}
+.share-txt{width: 100%; height:12.15rem;display: block;}
+.share-btn{width: 100%; }
+.btn{width:3.01rem;height:0.79rem; margin: 0 0.05rem;display: inline-block;}
+.btn-share{background: url('../../../img/annualBill/share/btn-share.png') no-repeat; background-size: 100% auto;margin-left: 0.5rem}
+.btn-return{background: url('../../../img/annualBill/share/btn-return.png') no-repeat; background-size: 100% auto}
+.btn:hover{opacity: 0.8}
+.btn-join{width:80%;height:0.79rem;line-height:0.79rem;border-radius:5px;background-color:#f14c2c;color:#fff;font-size: 0.48rem;display: inline-block;}
+.page11-bg {width: 100%;height:13rem;position:absolute;top:15px;left:0;z-index: -1;
+	background-image:url('../../../img/annualBill/share/bg-bottom.png');
+	background-repeat: no-repeat;  
+	background-position: center bottom; 
+	background-size:100% auto}
+.page11-bg img{width: 100%;}
+
+/*load*/
+.load{display: none;position: fixed;top: 50%;left: 50%;width: 50px;height: 50px;margin: -25px 0 0 -25px;background: rgba(0,0,0,0.6);border-radius: 5px;}
+.load span{display: block;width: 30px;height: 30px;margin: 10px auto;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ1QjgyREJDODE0QTExRTY5OTU1QjNFMTFFOEQ5QzA5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ1QjgyREJEODE0QTExRTY5OTU1QjNFMTFFOEQ5QzA5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDVCODJEQkE4MTRBMTFFNjk5NTVCM0UxMUU4RDlDMDkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDVCODJEQkI4MTRBMTFFNjk5NTVCM0UxMUU4RDlDMDkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5jJgr+AAACmUlEQVR42uyby04bMRSGXQTsqEBCUNiGKFxWEUKCBRIIXoFNBgmJp+gTRH2NLlgOD4AQBLGgUtfQcKm649INpGUDm+F3OZGGaDx2Zyb2TDhH+qLIzsTnH3vOWD62CIJAWKQMfNAifCqz5sMH+WHJKuAbGO4ofwCL4NyGE33CntUjxAoqq9tywmYPt8BHRd0jGOq1Hs6F2RS8H1O314tDehqcKILWEmjmrYcXQA2sgYEEbTUpGu+Cv8QulSURO0C+1Mg3MzN4d42CRvDWfoGq5Xd4mCr5ELYG+Rp7rcmfHwbRdgdGHIgdobaj7EB3vW5Iz4MVRd0Y2HQQaDep7Shb1Q3vPoNAk6a+W8FPN6NLLPhWU3/nQLCuzZs0r6VBcAZKEXXPYA5cWRY8BU7Jt077CWbJt0Q9LC/ciLirsnzbgVhBbW5HiPpNvj5nMfGQk4UtMAOuwQ7dTZcmR50HJsEP8JUmMbmZab27uTQLZsEsmAWzYBbMglnwPysDX7wupbboe7nAupR65NQyFxmBDC1eD+V3VOY7XLdKSqwe2cO5yAhkaLF63mXQykVGIEOL14MhPQ3uI8b7PdUV7RmO1dP+UYUe9j+ET2WioCj18IoHC2bBLJgFs2AWzIJZcLes3/B37WSaTEbL/GuekmkT4nVTjFEyzXQDyW3HRPwJeA7nyh750LnnpJp2c6kuIT7roKdL5FNXEuLLCrHtm+E5GMqeQmz7ZiynCVqfNPXjDgTr2pxII/hCU990ILiZymeDANEo0Ma0RhY78Yqy9fDIZOvh/6x4yB1uFXoPHwvNbhmFydX/L2A9tOD2GVwm+K9BClDymZXJgu8mF/GZhy4an3kIGZ956AXBfOYhFLRyeeYhixlSlmceEtmLAAMAvyVABtXuXJUAAAAASUVORK5CYII=) no-repeat 0 0;background-size: 30px 30px;-webkit-animation:loading 1.5s linear 0s infinite;  
+}
+@-webkit-keyframes loading {
+    from{-webkit-transform:rotate(0deg);}     
+    to{-webkit-transform:rotate(360deg);}
+}
+.dialog-alert .title,.dialog-mod .btn{
+	font-size: 0.17rem;
+}

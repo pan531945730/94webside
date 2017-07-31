@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>94bank 移动理财管家——妇女节</title>
+    <meta name="keywords" content="94bank,银行宝，银宝宝，理财产品，理财软件，掌上理财,p2p理财产品，理财产品商城，互联网理财">
+    <meta name="description" content="94bank是移动理财管家,为用户提供最高25倍银行存款利息!1元起购!8道安全保障,100%本息保障!随用随取!好收益,就看94bank!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.94bank.com/public/app/touch-icon57.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.94bank.com/public/app/touch-icon72.png?v=20160601">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.94bank.com/public/app/touch-icon114.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.94bank.com/public/app/touch-icon144.png?v=@{@WorkContext.Version}" />
+    <link rel="shortcut icon" href="http://mp.94bank.com/favicon.ico?v=0b53de0092c64465479fe60efd21" type="image/x-icon">
+    <link rel="stylesheet" href="../../../dist/activity/20170308/womenDay.css">
+</head>
+<body>
+    <div class="wmd-cont">
+        <div class="wmd-data">
+            <span class="data-tip"></span>
+            <ul class="data-cont" id="warn_scroll"></ul>
+        </div>
+        <span class="rule"></span>
+        <span class="jackpot-sta li01" id="fairy"></span>
+        <span class="jackpot-sta li02" id="luck_fairy"></span>
+        <span class="jackpot-sta li03" id="best_fairy"></span>
+        <div class="fairy-mod li04">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <div class="fairy-mod li05">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <div class="fairy-mod li06">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <div class="fairy-mod li07">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <div class="fairy-mod li08">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <div class="fairy-mod li09">
+            <span class="jackpot"></span>
+            <span class="yet"></span>
+        </div>
+        <span class="pag-btn"></span>
+        <div class="rule-dlg">
+            <img src="../../../lib/womenDay/rule.png" width="100%" height="auto" alt="womenDay">
+        </div>
+        <div class="dlg-wrap" id="fairy_dlg">
+            <div class="dlg-tit">
+                <p>女神福袋</p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info">
+               <img src="../../../lib/womenDay/fairy.png" width="100%" height="auto" alt="womenDay">
+            </div>
+        </div>
+        <div class="dlg-wrap" id="luck_fairy_dlg">
+            <div class="dlg-tit">
+                <p>幸运女神福袋</p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info">
+               <img src="../../../lib/womenDay/luck-fairy.png" width="100%" height="auto" alt="womenDay">
+            </div>
+        </div>
+        <div class="dlg-wrap best-fairy-dlg">
+            <div class="dlg-tit">
+                <p>幸运女神眷顾大礼</p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info">
+               <img src="../../../lib/womenDay/best-fairy.png" width="100%" height="auto" alt="womenDay">
+            </div>
+        </div>
+
+        <div class="dlg-wrap dlg-st-wrap">
+            <div class="dlg-tit">
+                <p id="st_tit"></p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info" id="dlg_st_pic">
+               
+            </div>
+        </div>
+        
+        <div class="dlg-wrap dlg-piz-wrap">
+            <div class="dlg-tit">
+                <p id="piz_tit"></p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info">
+                <p class="pz-tit">获得</p>
+                <ul class="pz-ul">
+                    <li>
+                        <p class="pz-st"></p>
+                        <div class="pz-box"></div>
+                    </li>
+                </ul>
+                <p class="pz-next">奖品领完啦~去开启下一关！</p>
+            </div>
+        </div>
+
+        <div class="dlg-wrap dlg-best-wrap">
+            <div class="dlg-tit">
+                <p>恭喜您！</p>
+                <img src="../../../lib/womenDay/dlg-tit.png" alt="sweetHeart" width="100%" height="auto">
+            </div>
+            <div class="dlg-info">
+                <p class="pz-tit">获得</p>
+                <p class="pz-st">幸运女神眷顾大礼<em>请选择您想要的奖品（3选1）</em></p>
+                <ul class="best-pz-ul">
+                    <li>
+                        <div class="best-pz-box shl"></div>
+                        <p class="ul-name">施华洛世奇套装礼盒</p>
+                        <p class="ul-price">市场价值 ¥2000</p>
+                        <span class="best-pz-btn" id="unbtn" type="16"></span>
+                    </li>
+                    <li>
+                        <div class="best-pz-box lf"></div>
+                        <p class="ul-name">拉菲礼盒套装</p>
+                        <p class="ul-price">市场价值 ¥888</p>
+                        <span class="best-pz-btn" type="17"></span>
+                    </li>
+                    <li>
+                        <div class="best-pz-box lk"></div>
+                        <p class="ul-name">兰蔻护肤套装</p>
+                        <p class="ul-price">市场价值 ¥840</p>
+                        <span class="best-pz-btn" type="18"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="besides">您还有<span class="num">6</span>次抽奖机会</p>
+        <img src="../../../lib/womenDay/wd01.jpg" width="100%" height="auto" alt="womenDay">
+        <img src="../../../lib/womenDay/wd02.jpg" width="100%" height="auto" alt="womenDay">
+        <img src="../../../lib/womenDay/wd03.jpg" width="100%" height="auto" alt="womenDay">
+        <img src="../../../lib/womenDay/wd04.jpg" width="100%" height="auto" alt="womenDay">
+        <img src="../../../lib/womenDay/wd05.jpg" width="100%" height="auto" alt="womenDay">
+    </div>
+    <div class="load">
+        <span></span>
+    </div>
+    <script type="text/javascript" src="../../../lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../../../dist/activity/20170308/womenDay.js"></script>
+</body>
+</html>

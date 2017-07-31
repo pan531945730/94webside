@@ -1,0 +1,132 @@
+body {background-color:#f2f2f2;color:#1a1a1a;}
+.mtb20{ margin-top: 20px; margin-bottom: 20px; }
+.tips{ width: 90%; margin:10px auto; }
+.red{color:#ff4040;}
+.gray{ color:#c6c6c6 !important;}
+.ul-two li{width: 49%; display: inline-block;}
+.ul-three li{ width: 32%;display: inline-block;}
+.psun-top,.psun-infor{ text-align: center; background: #fff; border-bottom: solid 1px #e5e5e5 }
+.psun-top { padding: 10px 0;}
+.psun-top li{ padding: 10px 0; height: 40px; }
+.psun-top li:first-of-type{border-right: solid 1px #e5e5e5}
+.psun-top li p{color: #c6c6c6}
+.psun-top li span{ font-size:21px; color: #ff4040; line-height:34px; }
+.psun-top li:last-of-type span{font-size: 16px;}
+.psun-infor{background: #fffdfd; }
+.psun-infor li{height: 45px; line-height:44px;}
+.psun-infor span{display:inline-block;vertical-align:middle;}
+.sun01{background: url(../../../src/img/sun01.png) no-repeat center center;}
+.sun02{background: url(../../../src/img/sun02.png) no-repeat center center;}
+.sun03{background: url(../../../src/img/sun03.png) no-repeat center center;}
+.sun01,.sun02,.sun03{ width:18px;height: 18px;background-size: 18px 18px; margin:0 2px;}
+
+.fm-btn {
+    display: block;
+    line-height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #ccc;
+    width: 90%;margin:0 auto;pointer-events:none;
+}
+.active {background-color:#fd5a5b;pointer-events:auto}
+
+.pdd-info{
+    padding: 0 15px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+.pdd-info a{
+    display: -webkit-box;
+    line-height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #1a1a1a;
+    font-size: 1.4rem;
+}
+.pdd-info p{
+    -webkit-box-flex: 1;
+}
+.pdd-info span{
+    display: block;
+    text-align: right;
+    color: #b2b2b2;
+}
+.pdd-info a:last-of-type{ border: none }
+.arrow:after{
+    content: "";
+    display: inline-block;
+    margin-left: 3px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+}
+
+.load{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+.load span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10px auto;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ1QjgyREJDODE0QTExRTY5OTU1QjNFMTFFOEQ5QzA5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ1QjgyREJEODE0QTExRTY5OTU1QjNFMTFFOEQ5QzA5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDVCODJEQkE4MTRBMTFFNjk5NTVCM0UxMUU4RDlDMDkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDVCODJEQkI4MTRBMTFFNjk5NTVCM0UxMUU4RDlDMDkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5jJgr+AAACmUlEQVR42uyby04bMRSGXQTsqEBCUNiGKFxWEUKCBRIIXoFNBgmJp+gTRH2NLlgOD4AQBLGgUtfQcKm649INpGUDm+F3OZGGaDx2Zyb2TDhH+qLIzsTnH3vOWD62CIJAWKQMfNAifCqz5sMH+WHJKuAbGO4ofwCL4NyGE33CntUjxAoqq9tywmYPt8BHRd0jGOq1Hs6F2RS8H1O314tDehqcKILWEmjmrYcXQA2sgYEEbTUpGu+Cv8QulSURO0C+1Mg3MzN4d42CRvDWfoGq5Xd4mCr5ELYG+Rp7rcmfHwbRdgdGHIgdobaj7EB3vW5Iz4MVRd0Y2HQQaDep7Shb1Q3vPoNAk6a+W8FPN6NLLPhWU3/nQLCuzZs0r6VBcAZKEXXPYA5cWRY8BU7Jt077CWbJt0Q9LC/ciLirsnzbgVhBbW5HiPpNvj5nMfGQk4UtMAOuwQ7dTZcmR50HJsEP8JUmMbmZab27uTQLZsEsmAWzYBbMglnwPysDX7wupbboe7nAupR65NQyFxmBDC1eD+V3VOY7XLdKSqwe2cO5yAhkaLF63mXQykVGIEOL14MhPQ3uI8b7PdUV7RmO1dP+UYUe9j+ET2WioCj18IoHC2bBLJgFs2AWzIJZcLes3/B37WSaTEbL/GuekmkT4nVTjFEyzXQDyW3HRPwJeA7nyh750LnnpJp2c6kuIT7roKdL5FNXEuLLCrHtm+E5GMqeQmz7ZiynCVqfNPXjDgTr2pxII/hCU990ILiZymeDANEo0Ma0RhY78Yqy9fDIZOvh/6x4yB1uFXoPHwvNbhmFydX/L2A9tOD2GVwm+K9BClDymZXJgu8mF/GZhy4an3kIGZ956AXBfOYhFLRyeeYhixlSlmceEtmLAAMAvyVABtXuXJUAAAAASUVORK5CYII=) no-repeat 0 0;
+    background-size: 30px 30px;
+    -webkit-animation:loading 1.5s linear 0s infinite;  
+}
+@-webkit-keyframes loading {
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(360deg);     
+    }
+}
+.txt{
+    padding-top: 10px;
+}
+.sun-agree{width: 100%}
+.sun-agree i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4c61f9;
+    margin-right: 5px;
+}
+.pt-arr:after{
+    display: block;
+    content: '';
+    width: 8px;
+    height: 6px;
+    background: url(../../img/protocol.png) no-repeat;
+    background-size: 8px 6px;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+.tips-error{ color: #f00; height: 10px; margin-top: 10px; }
+textarea{resize: none;}
+.dialog-prereg{}
+.dialog-prereg .dialog-mod{padding:0;}
+.dialog-prereg .close{width:50px;height: 45px; position:absolute;right:0;top:0; display:inline-block;text-align:center}
+.dialog-prereg .info{padding: 10px 15px 0; line-height: 30px;font-size: 1.4rem}
+.dialog-prereg .info span{width:65px;}
+.dialog-prereg .info span,.dialog-prereg .info p{display:inline-block;vertical-align:top}
+.dialog-prereg .info p{color:#999999; padding-bottom:5px;}
+.dialog-prereg .info p input,.dialog-prereg .info p textarea{display:inline-block;width:138px;background:#f2f2f2;border:solid 1px #e6e6e6; border-radius:2px;padding:5px;}
+.dialog-prereg .info p input{ height:20px; }
+.dialog-prereg .info p textarea{}
+.dialog-prereg .btn-wrap{width:90%;margin:10px auto;}
+.dialog-prereg .confirm-btn{background:#fd5a5b;color:#fff}
+.dialog-prereg .btn-wrap .cancle-btn{display: none;}
+.dialog-prereg .tips-error{ margin-top:0; height: 30px; }

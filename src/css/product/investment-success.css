@@ -1,0 +1,135 @@
+body{
+    color: #1a1a1a;
+    background-color: #f2f2f2;
+}
+.top-half{
+    padding: 0 15px;
+
+    background-color: #fff;
+}
+.top-half .time-line{
+    padding: 30px 0 24px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.top-half .line{
+    display: inline-block;
+    vertical-align: top;
+}
+.top-half .circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.top-half .circle:nth-of-type(1){
+    background-color: #00c300;
+    background: url(../../img/is-suc.png) #00c300 no-repeat center;
+    background-size: 10px 7px;
+}
+.top-half .circle:nth-of-type(3){
+    background: url(../../img/iv-sec.png) #c2c2c2 no-repeat center;
+    background-size: 10px 9px;
+}
+.top-half .circle:nth-of-type(5){
+    background: url(../../img/iv-third.png) #c2c2c2 no-repeat center;
+    background-size: 10px 12px;
+}
+.top-half .v-line{
+    width: 2px;
+    height: 43px;
+    margin-left: 12px;
+    background-color: #c2c2c2;
+}
+.top-half .v-line > .progress{
+    width: 100%;
+    background-color: #00c300;
+}
+.top-half .v-line:nth-of-type(2) > .progress{
+    height: 50%;
+}
+.top-half ul{
+    display: inline-block;
+    margin: 3px 0 0 10px;
+}
+.top-half li{
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+.top-half li p:first-child{
+    font-size: 1.4rem;
+}
+.top-half li:last-child{
+    margin-bottom: 0;
+}
+.top-half li > .date{
+    font-size: 12px;
+    color: #e2e2e2;
+}
+.suc-all{
+    display: -webkit-box;
+    -webkit-box-align: baseline;
+    padding: 13px 0;
+    font-size: 1.4rem;
+}
+.suc-all span{
+    display: block;
+}
+.suc-all p{
+    -webkit-box-flex: 1;
+    text-align: right;
+}
+.suc-all p em{
+    display: block;
+    padding-bottom: 5px;
+    color: #575757;
+}
+.suc-all p a{
+    color: #0577fc;
+}
+.low-half{
+    padding: 0 15px;
+}
+.btn-gup{
+    display: -webkit-box;
+    margin-top: 30px;
+}
+.btn-gup a{
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    color: #ff4040;
+    border-radius: 5px;
+    border:1px solid #ff4040;
+    background-color: #fff;
+    -webkit-box-flex: 1;
+}
+.btn-gup a:first-child{
+    margin-right: 15px;
+    background-color: #ff4040;
+    color: #fff;
+}
+.low-half p{
+    margin-top: 10px;
+    text-align: center;
+    color: #b2b2b2;
+}
+.low-half img{
+    width: 100%;
+    margin-top: 40px;
+}
+.suc-top{
+    padding: 0 15px;
+    line-height: 44px;
+    background-color: #fffde3;
+    font-size: 1.4rem;
+    color: #575757;
+}
+.suc-top span{
+    color: #ff4040;
+}
+.suc-top a{
+    padding-left: 5px;
+    font-size: 1.2rem;
+    color: #0577fc;
+}

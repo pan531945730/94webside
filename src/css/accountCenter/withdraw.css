@@ -1,0 +1,140 @@
+.ac-head {
+    display: -webkit-box;
+    height: 85px;
+    padding: 39px 0 37px;
+    background: url(../../img/ac-head.jpg) no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+}
+.ac-list {
+    width: 136px;
+    text-align: center;
+}
+.ac-mid {
+    -webkit-box-flex :1;
+    text-align: center;
+}
+.ac-line {
+    position: relative;
+    display: block;
+    margin: 5px -24px 0;
+    height: 2px;
+    background-color: #f7b8c2;
+}
+.ac-line:after{
+    position: absolute;
+    right: -4px;
+    top: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #f7b8c2;
+    border-right: 14px solid transparent;
+}
+.ac-ico{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color:#fff;
+    overflow: hidden;
+}
+.earn{
+    margin: 9px auto 0;
+}
+.ac-list p{
+    padding-top: 5px;
+}
+.ac-price{
+    font-size: 1.4rem;
+}
+.def-tip{
+    color: #b2b2b2;
+}
+.fm-form {
+    padding: 0 15px;
+    background-color: #fff;
+}
+.fm-form label {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 17px 0 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.fm-input {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-align: center;
+    height: 30px;
+}
+.fm-input input {
+    display: block;
+    -webkit-box-flex:1;
+    border: none;
+    font-size: 1.4rem;
+    color: #333;
+}
+.wd-all{
+    font-size: 1.4rem;
+    color: #007aff;
+}
+.price{
+    display: block;
+    width: 28px;
+    height: 18px;
+    background: url(../../img/price.png) no-repeat;
+    background-size: 18px 18px;
+}
+.clear {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/clear.png) no-repeat center center;
+    background-size: 15px 15px;
+}
+.error-tip {
+    display: -webkit-box;
+    height: 20px;
+    padding-top: 8px;
+}
+.error-tip span,.error-tip{
+    color: #ff6666;
+}
+.pay-tip{
+    display: block;
+    -webkit-box-flex:1;
+    text-align: right;
+    color: #b2b2b2;
+}
+.pay-tip i{
+    text-decoration: underline;
+    color: #ff5959;
+}
+.fm-btn {
+    display: block;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-top: 14px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #ff5959;
+}
+.wd-rule{
+    padding: 12px 0;
+    text-align: center;
+}
+.wd-rule a{
+    color: #4c61f9;
+}
+.info p{
+    font-size: 1.3rem;
+    line-height: 24px;
+}
+.info .dialog-inp{
+    margin-top: 25px;
+}
+.info span{
+    float: right;
+    color: #ff5959;
+}

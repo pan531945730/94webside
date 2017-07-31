@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>94bank 移动理财管家——微信绑定</title>
+    <meta name="keywords" content="94bank,银行宝，银宝宝，理财产品，理财软件，掌上理财,p2p理财产品，理财产品商城，互联网理财">
+    <meta name="description" content="94bank是移动理财管家,为用户提供最高25倍银行存款利息!1元起购!8道安全保障,100%本息保障!随用随取!好收益,就看94bank!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.94bank.com/public/app/touch-icon57.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.94bank.com/public/app/touch-icon72.png?v=20160601">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.94bank.com/public/app/touch-icon114.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.94bank.com/public/app/touch-icon144.png?v=@{@WorkContext.Version}" />
+    <link rel="shortcut icon" href="http://mp.94bank.com/favicon.ico?v=0b53de0092c64465479fe60efd21" type="image/x-icon">
+    <link rel="stylesheet" href="../../dist/accountBind/accountBind.css">
+</head>
+<body>
+    <p class="bd-tip">绑定账户后即可享受便捷式账户服务</p>
+    <div class="bd-logo">
+       <img src="../../lib/img/bd-logo.png" alt="94bank" width="100%" height="auto">
+    </div>
+    <div class="bd-form">
+        <label>
+            <em class="bd-ico tel"></em>
+            <span class="bd-input">
+                <input type="tel" placeholder="请输入手机号码" value="" maxlength="11" id="bd_tel">
+                <i class="clear"></i>
+            </span>
+            
+        </label>
+        <label>
+            <em class="bd-ico pwd"></em>
+            <span class="bd-input">
+                <input type="password" placeholder="请输入94bank登录密码" value=""  id="bd_pwd">
+                <i class="clear"></i>
+                <em class="eyes"></em>
+            </span>
+        </label>
+        <label class="imgcode-mod">
+            <em class="bd-ico imgcode"></em>
+            <span class="bd-input">
+                <input type="text" placeholder="请输入图形验证码" value=""  maxlength="4" id="bd_imgcode">
+            </span>
+            <img src="#" width="75" height="30" class="img-code" alt="图形验证码" ;>
+        </label>
+        <p class="error-tip"><span></span></p>
+        <a href="javascript:void(0);" class="bd-btn">绑定微信帐号</a>
+    </div>
+    <script type="text/javascript" src="../../lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../../dist/accountBind/accountBind.js"></script>
+
+</body>
+</html>

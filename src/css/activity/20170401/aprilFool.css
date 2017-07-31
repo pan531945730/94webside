@@ -1,0 +1,414 @@
+.af-cont{
+    position: relative;
+}
+.rule{
+    position: absolute;
+    top: 27%;
+    left: 3%;
+    width: 10%;
+    height: 9%;
+    background: url(../../../img/aprilFool/rule.png) no-repeat;
+    background-size: contain;
+    -webkit-animation: roate 1s linear infinite;
+    animation: roate 1s linear infinite;
+}
+@-webkit-keyframes roate {
+    0% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-5deg);
+    }
+}
+@keyframes roate {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+.prize-btn{
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    width: 79%;
+    height: 10%;
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.rule-dlg{
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.card-mod{
+    margin: 40% auto 0;
+    width: 158px;
+    height: 208px;
+    padding-top: 20px;
+    line-height: 21px;
+    background: url(../../../img/aprilFool/card.png) no-repeat center center;
+    background-size: 158px 228px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-pic{
+    width: 116px;
+    height: 96px;
+    margin: 0 auto 5px;
+}
+.xj{
+    background: url(../../../img/aprilFool/xj.png) no-repeat center center;
+    background-size: contain;
+}
+.hb{
+    background: url(../../../img/aprilFool/hb.png) no-repeat center center;
+    background-size: contain;
+}
+.hf{
+    background: url(../../../img/aprilFool/hf.png) no-repeat center center;
+    background-size: contain;
+}
+.snj{
+    background: url(../../../img/aprilFool/snj.png) no-repeat center center;
+    background-size: contain;
+}
+.zxj{
+    background: url(../../../img/aprilFool/zxj.png) no-repeat center center;
+    background-size: contain;
+}
+.lyej{
+    background: url(../../../img/aprilFool/lyej.png) no-repeat center center;
+    background-size: contain;
+}
+.tyj{
+    background: url(../../../img/aprilFool/tyj.png) no-repeat center center;
+    background-size: contain;
+}
+.fjp{
+    background: url(../../../img/aprilFool/fjp.png) no-repeat center center;
+    background-size: contain;
+}
+.xxhg{
+    background: url(../../../img/aprilFool/xxhg.png) no-repeat center center;
+    background-size: contain;
+}
+.dlb{
+    background: url(../../../img/aprilFool/dlb.png) no-repeat center center;
+    background-size: contain;
+}
+.dlg-tit{
+    margin: 12px 0 5px;
+    color: #fff;
+    font-size: 2.0rem;
+}
+.air-tit{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.edit-name{
+    color: #fcff00;
+}
+input::-webkit-input-placeholder { 
+    color: #fff; 
+} 
+.thanks{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 2.8rem;
+}
+.dlg-subtit{
+    font-size: 1.4rem;
+    color: #ffde59;
+}
+.air_input{
+    display: block;
+    margin: 0 auto;
+    width: 103px;
+    height: 20px;
+    border:2px solid #fcff00;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+}
+.card-name{
+    color: #fcff00;
+    font-size: 1.4rem;
+}
+.card-name span{
+    color: #fff;
+    font-size: 2.0rem;
+}
+.btn-mod{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    height: 54px;
+}
+.btn-mod span{
+    display: block;
+    width: 160px;
+}
+.sure{
+    margin-right: 5px;
+    background: url(../../../img/aprilFool/sure.png) no-repeat;
+    background-size: contain;
+}
+.cancel{
+    background: url(../../../img/aprilFool/cancel.png) no-repeat;
+    background-size: contain;
+}
+.besides{
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 4%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fcff00;
+}
+.besides span{
+    padding: 0 5px;
+    color: #fff;
+    font-size: 3.0rem;
+    vertical-align: middle;
+}
+.flip-out{
+    -webkit-animation:flipouttoleft 1s ease-in both;  
+    animation:flipouttoleft 1s ease-in both;  
+}
+@-webkit-keyframes flipouttoleft {
+    0% { -webkit-transform: rotateY(0); }
+    25% { -webkit-transform: rotateY(-90deg);}
+    50% { -webkit-transform: rotateY(-180deg);}
+    75% { -webkit-transform: rotateY(-270deg);}
+    100% { -webkit-transform: rotateY(-360deg);}
+}
+@keyframes flipouttoleft {
+    0% { transform: rotateY(0); }
+    25% { transform: rotateY(-90deg);}
+    50% { transform: rotateY(-180deg);}
+    75% { transform: rotateY(-270deg);}
+    100% { transform: rotateY(-360deg);}
+}
+.jx{
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    left: 25%;
+    top: 30%;
+}
+.jx01{
+    background: url(../../../img/aprilFool/jx01.png) no-repeat center center;
+    background-size: contain;
+    -webkit-animation: surpriseOut .6s ease both;
+    animation: surpriseOut .6s ease both;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+@-webkit-keyframes surpriseOut {
+    0% { 
+        opacity: 1 ;
+    }
+    100% {
+        opacity: 0 ;
+    }
+}
+@keyframes surpriseOut {
+    0% { 
+        opacity: 1 ;
+    }
+    100% {
+        opacity: 0 ;
+    }
+}
+.jx02{
+    background: url(../../../img/aprilFool/jx02_1.png) no-repeat center center;
+    background-size: contain;
+    -webkit-animation: surprise .6s ease both;
+    animation: surprise .6s ease both;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+@-webkit-keyframes surprise {
+    0% { 
+        opacity: 0 ;
+    }
+    10% {
+        opacity: 1 ;
+    }
+    90% {
+        opacity: 1 ;
+    }
+    100% {
+        opacity: 0 ;
+    }
+}
+@keyframes surprise {
+    0% { 
+        opacity: 0 ;
+    }
+    10% {
+        opacity: 1 ;
+    }
+    90% {
+        opacity: 1 ;
+    }
+    100% {
+        opacity: 0 ;
+    }
+}
+.jx02:after{
+    position: absolute;
+    content: '';
+    height: 25%;
+    width: 50%;
+    left: 45%;
+    top: 26%;
+    background: url(../../../img/aprilFool/jx02_2.png) no-repeat center center;
+    background-size: contain;
+    -webkit-animation: cake .1s ease-in both;
+    animation: cake .1s ease-in both;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+@-webkit-keyframes cake {
+    from { 
+        opacity: 0 ;
+        top: 35%;
+        left: 55%;
+        transform: scale(.3);
+    }
+    to {
+        
+    }
+}
+@keyframes cake {
+    from { 
+        opacity: 0 ;
+        top: 40%;
+        left: 55%;
+        transform: scale(.3);
+    }
+    to {
+        
+    }
+}
+.jx03{
+    position: absolute;
+    height: 46%;
+    width: 88%;
+    left: 6%;
+    top: 26%;
+    background: url(../../../img/aprilFool/jx03.png) no-repeat center center;
+    background-size: contain;
+     -webkit-animation: fool .5s ease-in both;
+    animation: fool .5s ease-in both;
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s; 
+}
+@-webkit-keyframes fool {
+    from { 
+        opacity: 0 ;
+        
+    }
+    to {
+        
+    }
+}
+@keyframes fool {
+    from { 
+        opacity: 0 ;
+        
+    }
+    to {
+        
+    }
+}
+.dlg-st-wrap{
+    position: absolute;
+    width: 238px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.st-tit{
+    position: relative;
+    left: 23px;
+    bottom: -16px;
+    width: 201px;
+    height: 43px;
+    line-height: 37px;
+    background: url(../../../img/aprilFool/dlg-tit.png) no-repeat center center;
+    background-size: contain;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.dlg-info{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    height: 220px;
+    padding-top: 15px;
+    background-color: #fffbbd;
+    border-radius: 14px;
+}
+.dlg-air-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -83px 0 0 -152px;
+    width: 304px;
+    height: 166px;
+    background: url(../../../img/aprilFool/madeFjp.png) no-repeat center center;
+    background-size: contain;
+}
+.dlg-air-wrap span{
+    position: absolute;
+    top: 52px;
+    left: 130px;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.nochance{
+    width: 197px;
+    height: 212px;
+    background: url(../../../img/aprilFool/nochance.png) no-repeat center center;
+    background-size: contain;
+}
+.unstart{
+    width: 183px;
+    height: 195px;
+    background: url(../../../img/em-unstart.png) no-repeat center center;
+    background-size: contain;
+}
+.end{
+    width: 151px;
+    height: 193px;
+    background: url(../../../img/em-end.png) no-repeat center center;
+    background-size: contain;
+}

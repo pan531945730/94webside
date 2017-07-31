@@ -1,0 +1,224 @@
+body{
+    background-color: #fff0d3;
+}
+.mt-banner,.mt-prize,.mt-info{
+    position: relative;
+}
+.rule{
+    position: absolute;
+    top: 79%;
+    right: 0;
+    width: 20%;
+    height: 9%;
+}
+.mt-prize li{
+    position: absolute;
+    border: 1px dashed #fba3a4;
+    border-radius: 100%;
+    background-color: rgba(254,239,239,0.27);
+}
+.mt-prize .cur-leve{
+    background-color: rgba(254,245,87,0.27);
+}
+.lv1{
+    width: 34.8%;
+    height: 13.5%;
+    top: 1%;
+    left: 7%;
+}
+.lv2{
+    width: 34.7%;
+    height: 13.5%;
+    top: 1.5%;
+    right: 7%;
+}
+.lv3{
+    width: 38.7%;
+    height: 15%;
+    top: 17.5%;
+    right: 11%;
+}
+.lv4{
+    width: 37%;
+    height: 14.5%;
+    top: 18.5%;
+    left: 8%;
+}
+.lv5{
+    width: 34.8%;
+    height: 13.6%;
+    top: 35.5%;
+    left: 7%;
+}
+.lv6{
+    width: 35%;
+    height: 13.5%;
+    top: 36.5%;
+    right: 12%;
+}
+.lv7{
+    width: 42.5%;
+    height: 16.5%;
+    top: 53.5%;
+    right: 1%;
+}
+.lv8{
+    width: 47.4%;
+    height: 18.5%;
+    top: 55.5%;
+    left: 2%;
+}
+.lv9{
+    width: 48%;
+    height: 19%;
+    top: 77.5%;
+    left: 7%;
+}
+.mt-prize li span{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.lv1 span{
+    background: url(../../../img/motherDay/pz1.png) no-repeat;
+    background-size: contain;
+}
+.lv2 span{
+    background: url(../../../img/motherDay/pz2.png) no-repeat;
+    background-size: contain;
+}
+.lv3 span{
+    background: url(../../../img/motherDay/pz3.png) no-repeat;
+    background-size: contain;
+}
+.lv4 span{
+    background: url(../../../img/motherDay/pz4.png) no-repeat;
+    background-size: contain;
+}
+.lv5 span{
+    background: url(../../../img/motherDay/pz5.png) no-repeat;
+    background-size: contain;
+}
+.lv6 span{
+    background: url(../../../img/motherDay/pz6.png) no-repeat;
+    background-size: contain;
+}
+.lv7 span{
+    background: url(../../../img/motherDay/pz7.png) no-repeat;
+    background-size: contain;
+}
+.lv8 span{
+    background: url(../../../img/motherDay/pz8.png) no-repeat;
+    background-size: contain;
+}
+.mt-prize .lv9 span{
+    height: 110%;
+    background: url(../../../img/motherDay/pz9.png) no-repeat;
+    background-size: contain;
+}
+.login-btn{
+    position: absolute;
+    width: 48%;
+    height: 37%;
+    top: 26%;
+    left: 26%;
+    background: url(../../../img/motherDay/login-btn.png) no-repeat;
+    background-size: contain;
+}
+.lg-info{
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 44%;
+    padding-top:1%;
+    top: 26%;
+    left: 5%;
+    background: url(../../../img/motherDay/lg-info.png) no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #741807;
+    line-height: 24px;
+}
+.lg-leve{
+    font-size: 1.8rem;
+    color: #e7432a;
+}
+.vip-list{
+    width: 90%;
+    margin: 12px auto 15px;
+    background-color: #fdecea;
+}
+.vip-list li{
+    display: -webkit-box;
+    -webkit-box-align:center;
+    height: 35px;
+}
+.vip-list li span{
+    display: block;
+    text-align: center;
+    color: #e7432a;
+}
+.vip-list li:nth-child(2n){
+    background-color: #fff;
+}
+.vip-list li:nth-child(1){
+    background-color: #f97f6f;
+}
+.vip-list li:nth-child(1) span{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.vip-list li span:nth-child(1){
+    width: 35%;
+}
+.vip-list li span:nth-child(2){
+    width: 40%;
+}
+.vip-list li span:nth-child(3){
+    width: 25%;
+}
+.foot{
+    padding-bottom: 15px;
+    text-align: center;
+    color: #8b3c26;
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.wrap-dlg{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    left: 4%;
+    right: 4%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-tit{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #e7432a;
+    font-weight: bold;
+}
+.rule-dlg-info{
+    margin: 0 4%;
+    padding: 10px 0;
+    line-height: 22px;
+    color: #491d16;
+}
+.rule-dlg-info li span{
+    color: #e7432a;
+}
+.rule-dlg-info li p{
+    line-height: 22px;
+}

@@ -1,0 +1,90 @@
+.bd-form {
+    padding: 0 15px;
+}
+.bd-form label {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: 17px 0 8px 0;
+}
+.bd-form .bd-ico {
+    display: block;
+    width: 28px;
+    height: 22px;
+}
+.bd-input {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-align: center;
+    height: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.bd-input input {
+    display: block;
+    -webkit-box-flex:1;
+    border: none;
+    font-size: 1.4rem;
+    color: #333;
+}
+.tel {
+    background: url(../../img/tel.png) no-repeat;
+    background-size: 13px 18px;
+}
+.pwd {
+    background: url(../../img/pwd.png) no-repeat;
+    background-size: 15px 16px;
+}
+.code {
+    background: url(../../img/imgcode.png) no-repeat;
+    background-size: 15px 16px;
+}
+.clear {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/clear.png) no-repeat center center;
+    background-size: 15px 15px;
+}
+.eyes {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/eyes.png) no-repeat center center;
+    background-size: 15px 9px;
+}
+.open-eyes {
+    background: url(../../img/open-eyes.png) no-repeat center center;
+    background-size: 15px 9px;
+}
+.img-code{
+    margin-left: 30px;
+}
+.rest-getcode{
+    display: block;
+    width: 75px;
+    line-height: 30px;
+    margin-left: 30px;
+    background-color: #f1ae2b;
+    color: #fff;
+    text-align: center;
+}
+.rest-setime{
+    background-color: #ccc;
+}
+.error-tip {
+    height: 20px;
+    padding-top: 8px;
+    color: #ff6666;
+    font-size: 1.4rem;
+}
+.bd-btn {
+    display: block;
+    width: 100%;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-top: 14px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #ff5959;
+}

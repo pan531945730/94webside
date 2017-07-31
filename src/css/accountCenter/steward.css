@@ -1,0 +1,129 @@
+html {
+    background-color: #f2f2f2;
+}
+.sf-head {
+    display: -webkit-box;
+    padding: 40px 0;
+    background: url(../../img/ac-head.jpg) no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+}
+.sf-head li{
+    width: 50%;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+.sf-head li p:nth-of-type(2){
+    font-size: 1.6rem;
+}
+.sf-cont{
+    margin: 17px 0 44px;
+}
+.sf-info li{
+    padding: 0 15px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.sf-info h2{
+    line-height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.4rem;
+}
+.get-btn{
+    float: right;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    border: 1px solid #ff5959;
+    border-radius: 15px;
+    text-align: center;
+    color: #ff5959;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+.lock-btn{
+    border: 1px solid #eee;
+    color: #bcbcbc;
+}
+.earn-f{
+    color: #ff5959;
+}
+.info-mod{
+    display: -webkit-box;
+    padding: 25px 0;
+    color: #333;
+}
+.info-mod div{
+    -webkit-box-flex: 1;
+    line-height: 22px;
+}
+.info-mod p{
+    font-size: 1.4rem;
+}
+.info-mod span{
+    color: #b2b2b2;
+}
+.m-earn{
+    text-align: center;
+}
+.m-time{
+    text-align: right;
+}
+
+.none-info{
+    padding: 180px 0 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.none-ico{
+    display: block;
+    width: 70px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 20px;
+    margin: 0 auto 10px;
+    background-color: #b3b3b3;
+}
+.none-ico:after{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+    content: '';
+    background: url(../../img/none.png) no-repeat;
+    background-size: 40px 30px;
+}
+.bot{
+    display: none;
+    color: #b2b2b2;
+    text-align: center;
+}
+.sf-bot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 96%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 2%;
+    background-color: #d9d9d9;
+    font-size: 1.4rem;
+    color: #333;
+}
+.sf-bot span{
+    float: right;
+    color: #ff5959;
+}
+.sf-bot span:after{
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

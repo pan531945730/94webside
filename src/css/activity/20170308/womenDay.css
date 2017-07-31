@@ -1,0 +1,435 @@
+body{
+    background-color: #f9da91;
+}
+.wmd-cont{
+    position: relative;
+}
+.wmd-data{
+    position: absolute;
+    display: -webkit-box;
+    left: 4%;
+    right: 4%;
+    top: 14.9%;
+    max-height: 96px;
+    padding: 0 15px 0 8px;
+    border:2px solid #fbd307;
+    background-color: #f39716;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.data-tip{
+    display: block;
+    width: 18px;
+    height: 30px;
+    background: url(../../../img/womeDay/warn.png) no-repeat left center;
+    background-size: 10px;
+}
+.data-cont{
+    -webkit-box-flex:1;
+    line-height: 32px;
+}
+.data-cont li {
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px dotted #fcff00;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.data-cont li em{
+    color: #fcff00;
+}
+.animate {
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; 
+}
+.rule{
+    position: absolute;
+    top: 12%;
+    left: 41%;
+    width: 18%;
+    height: 3%;
+}
+.jackpot-sta{
+    position: absolute;
+    width: 27%;
+    height: 7%;
+    top: 25%;
+}
+.li01{
+    left: 4%;
+}
+.li02{
+    left: 36%;
+}
+.li03{
+    left: 68%;
+}
+.fairy-mod{
+    position: absolute;
+    width: 35.5%;
+    height: 7%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.jackpot{
+    position: absolute;
+    left: 18%;
+    top: 21%;
+    width: 39%;
+    height: 39%;
+    background: url(../../../img/womeDay/fairy.png) no-repeat;
+    background-size: contain;
+}
+.get-piz .jackpot{
+    -webkit-animation: roate 1s linear infinite;
+    animation: roate 1s linear infinite;
+}
+@-webkit-keyframes roate {
+    0% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(10deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+@keyframes roate {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.yet{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../../../img/womeDay/yet.png) no-repeat;
+    background-size: contain;
+}
+.li04{
+    top: 32.4%;
+    left: 7.4%;
+}
+.li05{
+    top: 35.5%;
+    left: 59%;
+}
+.li05 .jackpot,.li06 .jackpot{
+    left: 10%;
+    top: 22%;
+}
+.li06{
+    top: 41.1%;
+    left: 11%;
+}
+.li07 .jackpot,.li08 .jackpot{
+    left: 0%;
+    top: -1%;
+    width: 80%;
+    height: 96%;
+    background: url(../../../img/womeDay/luck-fairy.png) no-repeat;
+    background-size: contain;
+}
+.li07{
+    top: 45.1%;
+    left: 61.4%;
+}
+.li08{
+   top: 50.7%;
+   left: 10.5%;
+}
+.li09{
+    top: 59.8%;
+    left: 38%;
+    width: 47%;
+    height: 9.5%;
+}
+.li09 .jackpot{
+    top: 2%;
+    left: 7%;
+    width: 83%;
+    height: 83%;
+    background: url(../../../img/womeDay/best-fairy.png) no-repeat;
+    background-size: contain;
+}
+.pag-btn{
+    position: absolute;
+    top: 80.8%;
+    left: 24%;
+    width: 53%;
+    height: 3%;
+}
+.rule-dlg{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-wrap{
+    position: absolute;
+    left: 14%;
+    right: 14%;
+    top: 60%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-tit{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: -33%;
+}
+.dlg-tit p{
+    position: absolute;
+    width: 100%;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    bottom: 7%;
+}
+.best-fairy-dlg .dlg-tit{
+    top: -41%;
+}
+.dlg-info{
+    padding: 10% 10px 10px;
+    background-color: #fffbbd;
+    color: #c36d00;
+    font-size: 1.4rem;
+    line-height: 22px;
+    border-radius: 14px;
+}
+.pz-tit{
+    padding: 10px 0;
+    color: #c36d00;
+    text-align: center;
+    font-size: 2.0rem;
+}
+.pz-st{
+    text-align: center;
+    color: #a43a00;
+    font-size: 2.2rem;
+}
+.pz-st span{
+    font-size: 2.4rem;
+    color: #ff4800;
+}
+.pz-st em{
+    display: block;
+    color: #ff4200;
+    padding-top: 4px;
+}
+.pz-box{
+    width: 116px;
+    height: 116px;
+    margin: 10px auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.best-pz-box{
+    width: 92px;
+    height: 92px;
+    margin: 8px auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.pz-next{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #444;
+}
+.xj{
+    background: url(../../../img/womeDay/xjhb.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.xjq{
+    background: url(../../../img/womeDay/tzq.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.hfk{
+    background: url(../../../img/womeDay/hfk.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.jdk{
+    background: url(../../../img/womeDay/jdk.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.qkl{
+    background: url(../../../img/womeDay/qkl.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.jg{
+    background: url(../../../img/womeDay/jg.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.jsq{
+    background: url(../../../img/womeDay/jsq.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.ys{
+    background: url(../../../img/womeDay/ys.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.xs{
+    background: url(../../../img/womeDay/xs.png) no-repeat center center;
+    background-size: 116px 116px;
+}
+.shl{
+    background: url(../../../img/womeDay/shl.png) no-repeat center center;
+    background-size: 92px;
+}
+.lf{
+    background: url(../../../img/womeDay/lf.png) no-repeat center center;
+    background-size: 92px;
+}
+.lk{
+    background: url(../../../img/womeDay/lk.png) no-repeat center center;
+    background-size: 92px;
+}
+.dlg-best-wrap{
+    left: 2%;
+    right: 2%;
+}
+.dlg-best-wrap .dlg-tit{
+    top: -65%;
+}
+.dlg-best-wrap .pz-st{
+    font-size: 2.0rem;
+}
+.best-pz-ul{
+    display: -webkit-box;
+}
+.best-pz-ul li{
+    -webkit-box-flex: 1;
+    width: 100%;
+    text-align: center;
+}
+.best-pz-ul li p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.ul-name{
+    color: #c36d00;
+}
+.ul-price{
+    color: #ff4200;
+    font-size: 1.4rem;
+}
+.best-pz-btn{
+    display: block;
+    height: 24px;
+    background: url(../../../img/womeDay/best-pz-btn.png) no-repeat center center;
+    background-size: 92px;
+    margin-top: 4px;
+}
+.unbtn{
+    display: block;
+    height: 24px;
+    background: url(../../../img/womeDay/best-pz-unbtn.png) no-repeat center center;
+    background-size: 92px;
+    margin-top: 4px;
+}
+.besides{
+    display: none;
+    position: absolute;
+    top: 84%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.num{
+    padding: 0 5px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #ff0000;
+    vertical-align: middle;
+}
+.dlg-st-wrap .dlg-tit{
+    top: -53%;
+}
+.dlg-piz-wrap .dlg-tit{
+    top: -58%;
+}
+.succ{
+    height: 254px;
+    background: url(../../../img/womeDay/succ.png) no-repeat center center;
+    background-size: 195px 170px;
+}
+.nochance{
+    height: 254px;
+    background: url(../../../img/womeDay/nochance.png) no-repeat center center;
+    background-size: 200px;
+}
+.unstart{
+    height: 250px;
+    background: url(../../../img/em-unstart.png) no-repeat center center;
+    background-size: 183px 195px;
+}
+.end{
+    height: 250px;
+    background: url(../../../img/em-end.png) no-repeat center center;
+    background-size: 151px 193px;
+}
+@media screen and (max-height: 568px) {
+    .dlg-tit p{
+        font-size: 2.0rem;
+    }
+    .dlg-best-wrap .dlg-tit{
+        top: -52%;
+    }
+    .dlg-best-wrap .dlg-info{
+        padding: 10% 2px 10px 2px;
+    }
+    .dlg-st-wrap .dlg-tit{
+        top: -43%;
+    }
+}
+.load{
+    display: none;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.load span{
+    display: block;
+    width: 329px;
+    height: 345px;
+    margin: 0 auto;
+    background: url(../../../img/womeDay/load.png) no-repeat 0 0;
+    background-size: 329px 345px;
+    -webkit-animation:loading 1.5s linear 0s infinite;  
+}
+@-webkit-keyframes loading {
+    from{     
+        -webkit-transform:scale(0.5,0.5);     
+    }     
+    to{     
+        -webkit-transform:scale(1,1);        
+    }
+}

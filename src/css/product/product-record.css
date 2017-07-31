@@ -1,0 +1,55 @@
+body {
+    background-color:#f2f2f2;
+}
+.pr-info{
+    background-color: #fff;
+    padding: 0 15px;
+}
+.pr-info li{
+    display: -webkit-box;
+    -webkit-box-align:center;
+    height: 44px;
+    padding: 5px 0;
+    line-height: 22px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 1.4rem;
+}
+.pr-info li:first-child{
+    border-top: none;
+}
+.pr-price{
+    -webkit-box-flex:1;
+    text-align: right;
+}
+.pr-price span{
+    color: #b2b2b2;
+    font-size: 1.2rem;
+}
+.none-info{
+    padding: 180px 0 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.none-ico{
+    display: block;
+    width: 70px;
+    height: 55px;
+    border-radius: 100%;
+    padding-top: 15px;
+    margin: 0 auto 10px;
+    background-color: #b3b3b3;
+}
+.none-ico:after{
+    display: block;
+    width: 35px;
+    height: 40px;
+    margin: 0 auto;
+    content: '';
+    background: url(../../img/record-ico.png) no-repeat;
+    background-size: 35px 40px;
+}
+.bot{
+    display: none;
+    color: #b2b2b2;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.detail-box{padding: 12px;}
+.detail-box h2{font-size: 1.9rem;color: #333; line-height: 35px; }
+.auto { margin: 10px 0; display: none;}
+.auto ul{display: inline-block;vertical-align: middle;}
+.auto li{display: inline-block;margin-right: 5px;font-size: 1.2rem;color: #bcbcbc;border:1px #bcbcbc solid;padding: 0px 3px; height:14px; line-height: 14px; border-radius:2px;vertical-align: middle;}
+.auto span{display: inline-block;vertical-align: middle; margin-left: 5px; padding-left: 16px; background: url(../../img/eyeicon.png) left center no-repeat; background-size: 11px 10px;  height: 16px; line-height: 17px; font-size: 1.2rem; color: #bcbcbc;}
+.p30{padding: 30px;text-align: center;font-size: 1.8rem;color: #333;}
+.details-content,.details-content *{ font-size: 1.4rem; color: #666666; line-height: 25px; text-indent: 15px; }
+.details-content img{display: block; margin:5px auto; max-width: 100%; height: auto;}
+.details-content p{ margin-bottom: 15px;}
+.nomess{ font-size: 2rem; color: #999; padding: 40px 0 0; text-align: center;}

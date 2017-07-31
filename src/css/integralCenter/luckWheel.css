@@ -1,0 +1,171 @@
+body{
+    background-color: #4b01a2;
+}
+.lw-cont{
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.lw-tit{
+    position: absolute;
+    width: 100%;
+    top: 18%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff; 
+}
+.lw-tit span{
+    color: #fff100;
+}
+.lw-wheel{
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    right: 5%;
+    z-index: 1;
+}
+.pointer{
+    position: absolute;
+    width: 36%;
+    left: 32%;
+    top: 25%;
+}
+.item{
+    width: 100%;
+}
+.lw-record{
+    position: absolute;
+    width: 100%;
+    top: 78%;
+    text-align: center;
+    color: #fff; 
+}
+.lw-award{
+    position: absolute;
+    max-height: 72px;
+    top: 85%;
+    left: 10%;
+    width: 82%;
+    overflow: hidden;
+}
+.lw-award ul{
+    line-height: 24px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.lw-award li {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.animate {
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; 
+}
+@media screen and (max-height: 568px) {
+    .lw-award{
+        top: 84%;
+    }
+}
+.dialog-mod{
+    border-radius: 10px;
+}
+.dialog-alert .title{
+    padding: 25px 15px 0;
+    line-height: 24px;
+    color: #1a1a1a;
+}
+.dialog-alert .title h2{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+.dialog-alert .title p{
+    font-size: 1.4rem;
+    text-align: left;
+}
+.dialog-mod .btn-wrap{
+    margin-top: 10px;
+    border-top: none;
+}
+.dialog-mod .btn{
+    background-color: #ff4040;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+.winAlert{
+    width: 286px;
+    height: 286px;
+    left: 50%;
+    margin-left: -140px;
+    background: url(../../img/dlg-bg.png) no-repeat;
+    background-size: 286px;
+}
+.winAlert .title{
+    width: 280px;
+    padding: 30px 0 30px 0;
+    line-height: 22px;
+    text-align: center;
+}
+.winAlert .title p{text-align: center;}
+.winAlert .ico-close{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/dlg-close.png) no-repeat;
+    background-size: 30px;
+}
+.winAlert .title span{
+    width: 135px;
+    height: 128px;
+    display: inline-block;
+}
+.ico-5xj{
+    background: url(../../img/lw-5xj.png) no-repeat center center;
+    background-size: 126px;
+}
+.ico-30y{
+    background: url(../../img/lw-30y01.png) no-repeat center center;
+    background-size: 67px;
+}
+.ico-88f{
+    background: url(../../img/lw-88f01.png) no-repeat center center;
+    background-size: 94px;
+}
+.ico-58f{
+    background: url(../../img/lw-58f01.png) no-repeat center center;
+    background-size: 94px;
+}
+.ico-5q{
+    background: url(../../img/lw-5q01.png) no-repeat center center;
+    background-size: 135px;
+}
+.ico-05q{
+    background: url(../../img/lw-05q01.png) no-repeat center center;
+    background-size: 135px;
+}
+.award-suc{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.award-about{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+}
+.winAlert .btn-wrap{
+    border-top: none;
+    width: 280px;
+}
+.winAlert .btn-wrap .btn{
+    font-size: 1.7rem;
+    color: #fff;
+}
+.mask{width:100%;min-height:800px;height: 100%;z-index:99;position: absolute;;top:0;left: 0;display: none;}
+.load{z-index: 1}

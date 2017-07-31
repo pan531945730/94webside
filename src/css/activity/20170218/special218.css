@@ -1,0 +1,50 @@
+body{
+    background-color:#fdb802; 
+}
+.ac-cont{
+    position: relative;
+    padding-bottom: 10px;
+}
+.ac-unlock{
+    position: absolute;
+    top: 30%;
+    right: 26%;
+    width: 55%;
+    height: 30%;
+}
+.unlock{
+    -webkit-animation: rock 1s linear infinite;
+    animation: rock 1s linear infinite;
+}
+@-webkit-keyframes rock{
+    0%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+    50%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+}
+@keyframes rock{
+    0%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+    50%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100%{
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+    }
+}
+
+.toast{
+    background: rgba(255,255,255,.7);
+}

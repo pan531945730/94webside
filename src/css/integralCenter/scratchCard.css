@@ -1,0 +1,96 @@
+body{
+   background-color: #d12e19;
+}
+.sc-cont{
+    position: relative;
+}
+.sc-chance{
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    color: #f9faf9;
+    font-size: 1.4rem;
+}
+.sc-chance i{
+    padding: 0 12px;
+}
+.sc-chance span, .sc-chance a{
+    color: #fff100;
+}
+.sc-rule{
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    text-align: center;
+    color: #fdfbdf;
+}
+.dialog-mod{
+    border-radius: 10px;
+}
+.dialog-alert .title{
+    padding: 25px 15px 0;
+    line-height: 24px;
+    color: #1a1a1a;
+}
+.dialog-alert .title h2{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+.dialog-alert .title p{
+    font-size: 1.4rem;
+    text-align: left;
+}
+.dialog-mod .btn-wrap{
+    margin-top: 10px;
+    border-top: none;
+}
+.dialog-mod .btn{
+    background-color: #ff4040;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+.scratch-canvas,.scratch-nochace,.scratch-gold{
+    position: absolute;
+    width: 80%;
+    height: 13%;
+    left: 10%;
+    top: 64%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.scratch-nochace{
+    display: none;
+    background: url(../../img/sc-nochance.png) no-repeat center center;
+    background-size: contain;
+}
+.scratch-gold{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    background-color: #ff4c35;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.scratch-gold span{vertical-align: middle;padding-right: 5px;}
+.scratch-gold a{
+    font-size: 1.2rem;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+.scratch-gold a:after{
+    display: inline-block;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform:rotateZ(45deg);
+    -webkit-transform:rotateZ(45deg);
+}
+.scratch-gold em{
+    color: #fff100;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>年终账单</title>
+    <meta name="keywords" content="94bank,银行宝，银宝宝，理财产品，理财软件，掌上理财,p2p理财产品，理财产品商城，互联网理财">
+    <meta name="description" content="94bank是移动理财管家,为用户提供最高25倍银行存款利息!1元起购!8道安全保障,100%本息保障!随用随取!好收益,就看94bank!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.94bank.com/public/app/touch-icon57.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.94bank.com/public/app/touch-icon72.png?v=20160601">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.94bank.com/public/app/touch-icon114.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.94bank.com/public/app/touch-icon144.png?v=@{@WorkContext.Version}" />
+    <link rel="shortcut icon" href="http://mp.94bank.com/favicon.ico?v=0b53de0092c64465479fe60efd21" type="image/x-icon">
+    <script src="../../lib/rem.js"></script>
+    <link href="../../dist/annualBill/annualBill.css" rel="stylesheet" type="text/css" />   
+</head>
+<body>
+
+    <div class="loading-box">
+        <img src="../../lib/annualBill/loading.png" alt="年终账单" class="loading-img" />
+        <p id="loading">0%</p>
+    </div>
+
+    <div id="flipbook" class="flipbook" style="display: none">
+        <div class="page page01">
+            <div class="tips"></div>
+            <img src="../../lib/annualBill/page/01.png" alt="年终账单" class="page01-pic01" />
+        </div>
+
+        <div class="page page02">
+            <div class="page-txt">
+                <time id="time1">2016年5月1日</time>
+                <p>我在94bank</p>
+                <p>赚取第一笔收益</p>
+                <p>赚了<b class="red" id="amount1">22222</b>元</p>
+            </div>
+            <img src="../../lib/annualBill/page/02.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page03">            
+            <div class="page-txt">
+                <time id="time2">2016年5月1日</time>
+                <p>我在94bank</p>
+                <p>投资最神豪的一次</p>
+                <p>投资了<b class="red" id="amount2">3333333</b>元</p>
+            </div>
+            <img src="../../lib/annualBill/page/03.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page04">                 
+            <div class="page-txt">
+                <time id="time3">2016年5月1日</time>
+                <p>我在94bank</p>
+                <p>钱包爆满的一天</p>
+                <p>赚了<b class="red" id="amount3">44444</b>元</p>
+            </div>
+            <img src="../../lib/annualBill/page/04.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page05">        
+            <div class="page-txt">
+                <p><b class="red" id="yue4">12</b>月是我在全年投资最聪明的一个月</p>
+                <p>投资了<b class="red" id="amount4">5555555</b>元</p>
+                <p>机智指数超过<b class="red" id="jzzs4">99%</b>的用户</p>
+            </div>
+            <img src="../../lib/annualBill/page/05.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page06">            
+            <div class="page-txt">
+                <p>我在今年获得红包<b class="red" id="amount5">66666</b>元</p>
+                <p>福气指数超过全球<b class="red" id="fqzs5">66%</b></p>
+                <p>被认证为<b class="red fz-big" id="title5">七星福星</b></p>
+            </div>
+            <img src="../../lib/annualBill/page/06.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page07">            
+            <div class="page-txt">
+                <p>我在今年邀请好友<b class="red" id="count6">77</b>人</p>
+                <p>义气指数超过<b class="red" id="yqzs6">77%</b>的用户</p>
+                <p>被大家认为是<b class="red fz-big" id="title6">肝胆相照</b>的朋友</p>
+            </div>
+            <img src="../../lib/annualBill/page/07.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page08">            
+            <div class="page-txt">
+                <p>2016年我在94bank累计投资</p>
+                <p><b class="red" id="amount7">8888888</b>元</p>
+                <p>超过<b class="red" id="baifenbi7">88%</b>的用户</p>
+                <p>荣登94bank年度大咖</p>
+            </div>
+            <img src="../../lib/annualBill/page/08.png" alt="年终账单" class="page-pic" />
+        </div>
+
+        <div class="page page09">           
+            <div class="page-txt">
+                <p>12星座中年度最会赚钱的是<b class="red" id="maxconstell">处女座</b></p>
+                <p><b class="red" id="constell">白羊座</b>的你在12星座中赚钱指数</p>
+                <p>排名<b class="red" id="rankconstell">第九</b></p>
+            </div>
+            <img src="../../lib/annualBill/page/09.png" alt="年终账单" class="page-pic" />
+        </div>
+        
+        <div class="page page10">            
+            <div class="page-txt">
+                <p>我这一年投资最多的是<b class="red fz-small" id="maxamounttitle">九盈宝365天</b></p>
+                <p><span>九盈宝90天</span><b class="red" id="day90">30%</b></p>
+                <p><span>九盈宝180天</span><b class="red" id="day180">20%</b></p>
+                <p><span>九盈宝365天</span><b class="red" id="day365">20%</b></p>
+                <p><span>银行宝</span><b class="red"  id="yinhangbao">30%</b></p>
+                <p><span>基金宝</span><b class="red" id="jijinbao">0%</b></p>
+                <p><span>其他</span><b class="red" id="qitabao">0%</b></p>
+                <p><span>投资风格酷似稳健持有的金融教父</span><b class="red fname" id="title8">李嘉诚李嘉诚</b></p>
+            </div>            
+            <img src="../../lib/annualBill/page/10.png" alt="年终账单" class="page-pic" />
+            <a href="javascript:void(0)" class="jump-share" id="jumpShare"></a>
+        </div>
+    </div>
+
+    <div class="flipbook-no" id="flipbookNo" style="display: none">
+        <img src="../../lib/annualBill/no/icon.png" class="pic-icon" />
+        <img src="../../lib/annualBill/no/txt.png" class="pic-txt"/>
+        <a href="http://np.94bank.com/member/FriendRegister" class="btn-open"></a>
+    </div>
+    <a href="javascript:void(0);" id="islogin" style="display:none;"></a>
+
+    <script src="../../lib/zepto.min.js"></script>
+    <script src="../../lib/jquery-2.1.3.min.js"></script>
+    <script src="../../dist/annualBill/annualBill.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>94bank 移动理财管家——理财中心</title>
+    <meta name="keywords" content="94bank,银行宝，银宝宝，理财产品，理财软件，掌上理财,p2p理财产品，理财产品商城，互联网理财">
+    <meta name="description" content="94bank是移动理财管家,为用户提供最高25倍银行存款利息!1元起购!8道安全保障,100%本息保障!随用随取!好收益,就看94bank!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.94bank.com/public/app/touch-icon57.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.94bank.com/public/app/touch-icon72.png?v=20160601">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.94bank.com/public/app/touch-icon114.png?v=20160601" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.94bank.com/public/app/touch-icon144.png?v=@{@WorkContext.Version}" />
+    <link rel="shortcut icon" href="http://mp.94bank.com/favicon.ico?v=0b53de0092c64465479fe60efd21" type="image/x-icon">
+    <link rel="stylesheet" href="../../dist/product/productDetail.css">
+</head>
+<body>
+    <div class="pdd-warp">
+        <div class="pdd-container">
+            <ul class="pdd-head">
+                <li>
+                    <p><span id="earn"></span>%</p>
+                    <p>预期年化收益率</p>
+                    <span class="event-tip event-hide">平台奖励收益</span>
+                </li>
+                <li>
+                    <p><span id="day"></span>天</p>
+                    <p>投资期限</p>
+                </li>
+            </ul>
+            <div class="jjb-head">
+                <canvas id="vca" width="640" height="360"></canvas>
+            </div>
+            <div class="pdd-form">
+                <div class="fm-head">
+                    <input type="number" class="fm-price" value="" placeholder="">
+                    <span class="fm-card">选择卡券</span>
+                </div>
+                <p class="fm-note">
+                    <span class="fm-sum" style="display:none;">可用余额:<em>15.00</em></span>
+                    <a href="#" class="fm-login">请登录</a>
+                    <span class="fm-earn">预期收益:<em>0.00</em></span>
+                </p>
+                <a href="javascript:void(0);" class="fm-btn" id="buy_btn"> 抢 购 (仅剩36.4万)</a>
+            </div>
+            <div class="pdd-info">
+                <a href="javascript:void(0);">
+                    <p>起息日期</p>
+                    <span id="date"></span>
+                </a>
+                <a href="javascript:void(0);">
+                    <p>结算方式</p>
+                    <span id="payments"></span>
+                </a>
+                <a href="javascript:void(0);" class="redemption arrow">
+                    <p>赎回方式</p>
+                    <span></span>
+                </a>
+                <a href="javascript:void(0);" class="description arrow">
+                    <p>项目描述</p>
+                </a>
+                <a href="javascript:void(0);" class="guarantee arrow">
+                    <p>资金保障</p>
+                </a>
+                <a href="javascript:void(0);" class="record arrow">
+                    <p>购买记录</p>
+                </a>
+            </div>
+            <p class="pdd-protocol">
+                <i class="pt-arr"></i>同意<a href="javascript:void(0);">购买协议</a>
+            </p>
+            <div class="foot-bar">
+                <a href="https://itunes.apple.com/us/app/94bank-bu-shi-yin-xing-de94bank/id878005164?l=zh&ls=1&mt=8">下载APP</a>
+                <a href="javascript:void(0);" id="contact_us">联系我们</a>
+                <a href="/Product/ProductList">理财中心</a>
+            </div>
+        </div>
+        <div class="coupon-container">
+            <ul class="coupon-cont">
+            </ul>
+            <!--暂无数据-->
+            <div class="none-info" style="display:none;">
+                <span class="none-ico"></span>
+                <p>暂无可用优惠券</p>
+            </div>
+            <div class="coupon-btn">
+                <a href="javascript:void(0);" class="cp-back">直接返回</a>
+                <a href="javascript:void(0);" class="cp-nonuse">不使用卡券</a>
+            </div>
+            <div class="bot">已经到底啦</div>
+        </div>
+        <div class="load">
+            <span></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../../dist/product/productDetail.js"></script>
+
+</body>
+</html>

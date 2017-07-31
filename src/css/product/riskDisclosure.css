@@ -1,0 +1,9 @@
+.rd-cont{
+    padding: 20px 12px;
+    line-height: 22px;
+    font-size: 1.4rem;
+    color: #666;
+}
+.rd-cont p{
+    padding: 10px 0;
+}

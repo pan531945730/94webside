@@ -1,0 +1,256 @@
+body{
+    background-color: #f48907;
+}
+.buy-warp{
+    position: relative;
+    background: -webkit-radial-gradient(top ,#fdcc01, #f48907); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(top , #fdcc01, #f48907); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(top , #fdcc01, #f48907); /* Firefox 3.6 - 15 */
+    background: radial-gradient(top , #fdcc01, #f48907); /* 标准的语法（必须放在最后） */
+}
+.buy-logo{
+    display: block;
+    margin: 0 auto;
+    width: 68px;
+    height: 40px;
+    background: url(../../../img/special518/logo.png) no-repeat center center;
+    background-size: 68px;
+}
+.buy-head{
+    position: relative;
+    margin: 0 5%;
+    height: 60px;
+    background-color: #912022;
+    border-radius: 5px 5px 0 0;
+}
+.box1{
+    position: absolute;
+    top: 15px;
+    left: 25%;
+    width: 64%;
+    height: 45px;
+    background-color: #00ff6c;
+    border-radius:  5px 5px 0 0;
+}
+.box2{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    width: 64%;
+    height: 35px;
+    background-color: #eefd00;
+    border-radius:  5px 5px 0 0;
+}
+.box3{
+    position: absolute;
+    top: 40px;
+    left: 15%;
+    width: 64%;
+    height: 20px;
+    background-color: #00e4ff;
+    border-radius:  5px 5px 0 0;
+}
+.buy-cont{
+    position: relative;
+    margin: -5px 5% 20px;
+    background-color: #ff3838;
+    border-radius: 8px;
+    padding: 8px;
+}
+.buy-info{
+    border-radius: 8px;
+    border:1px dashed #fff;
+    padding: 16px 0 30px;
+}
+.buy-tit{
+    position: relative;
+    margin: 0 -6%;
+    line-height: 34px;
+    background-color: #ffff00;
+    color: #912022;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.buy-tit:before{
+    position: absolute;
+    bottom: -7px;
+    left:0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 7px solid #e0e000;
+    border-left: 7px solid transparent; 
+}
+.buy-tit:after{
+    position: absolute;
+    bottom: -7px;
+    right:0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 7px solid #e0e000;
+    border-right: 7px solid transparent; 
+}
+@media screen and (min-width:321px) and (max-width:375px){
+    .buy-tit:before{
+        bottom: -10px;
+        border-top: 10px solid #e0e000;
+        border-left: 10px solid transparent; 
+    }
+    .buy-tit:after{
+        bottom: -10px;
+        border-top: 10px solid #e0e000;
+        border-right: 10px solid transparent; 
+    }
+}
+@media screen and (min-width:376px) and (max-width:414px){
+    .buy-tit:before{
+        bottom: -12px;
+        border-top: 12px solid #e0e000;
+        border-left: 12px solid transparent; 
+    }
+    .buy-tit:after{
+        bottom: -12px;
+        border-top: 12px solid #e0e000;
+        border-right: 12px solid transparent; 
+    }
+}
+.buy-tit span{
+    padding-right: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.buy-form{
+    padding: 0 16px;
+}
+.buy-info-list{
+    display: -webkit-box;
+    padding: 15px 0;
+}
+.buy-info-list li{
+    line-height: 22px;
+    -webkit-box-flex:1;
+    width: 100%;
+    text-align: center;
+}
+.buy-info-list li p{
+    color: #000;
+}
+.buy-info-list li span{
+    display: block;
+    color: #fff;
+}
+.buy-info-list .f01{
+    color: #eaff00;
+    font-size: 1.6rem;
+}
+.buy-info-list .f02{
+    color: #ff3838;
+    font-size: 1.6rem;
+}
+.fm-price{
+    display: -webkit-box;
+}
+.fm-price input{
+    -webkit-box-flex:1;
+    display: block;
+    padding: 0 10px;
+    line-height: 32px;
+    border: 1px solid #a84200;
+    font-size: 1.4rem;
+}
+.fm-note{
+    padding: 8px 0 12px;
+    line-height: 22px;
+    color: #912022;
+}
+.fm-note span{
+    color: #000;
+}
+.fm-btn{
+    background: -webkit-linear-gradient(#ffe44c, #fed340, #fdbd29);
+    background: -o-linear-gradient(#ffe44c, #fed340, #fdbd29);
+    background: linear-gradient(#ffe44c, #fed340, #fdbd29);
+    line-height: 35px;
+    text-align: center;
+    color: #a95207;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.buy-record{
+    margin: 0 5%;
+    padding: 0 12px 20px 12px;
+    background-color: #ff3838;
+}
+.record-tit{
+    line-height: 46px;
+    border-bottom: 2px solid #7d0000;
+    font-weight: bold;
+    color: #fff;
+}
+.record-info{
+    margin-top: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.record-info-head{
+    display: -webkit-box;
+    height: 44px;
+    -webkit-box-align:center;
+    margin: 0 7px 0 12px;
+    border-bottom: 1px dotted #a84200;
+}
+.record-info-head p{
+    font-size: 1.4rem;
+    -webkit-box-flex:1;
+    color: #ff3838;
+}
+.record-info-head a{
+    display: block;
+    width: 74px;
+    height: 26px;
+    background: url(../../../img/special518/btn.png) no-repeat;
+    background-size: contain;   
+}
+.record-info .buy-info-list span{
+    color: #912022;
+}
+.unbtn{
+    background: #f1f1f1;
+    color: #949494;
+}
+.info{
+    padding: 10px 0;
+    line-height: 22px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.error-tip {
+    height: 20px;
+    padding-top: 8px;
+    color: #ff6666;
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.0);
+}
+.dlg-info{
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background: rgba(0,0,0,0.7);
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 9px;
+}

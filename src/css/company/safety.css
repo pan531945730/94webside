@@ -1,0 +1,950 @@
+html{
+    font-size: 50px;
+}
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+div, span, i, em, a, button{
+    background-size: 100% 100% !important;
+}
+.swiper-container,
+.swiper-horizontal {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    height: 100%;
+}
+.swiper-container-vertical > .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-pagination {
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    text-align: center;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-left: 24px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #c2c2c2;
+    cursor: pointer;
+}
+.swiper-pagination-bullet:first-child{
+    margin-left: 0;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #3896fd;
+}
+.move-ico-up{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 50%;
+    margin-left: -20px;
+    top: 94%;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: moveToBottom ease 1.2s both infinite;
+    animation: moveToBottom ease 1.2s both infinite;
+    z-index: 10;
+}
+@-webkit-keyframes moveToBottom {
+    from { }
+    to {
+        top: 92%;
+    }
+}
+@keyframes moveToBottom {
+    from { }
+    to {
+        top: 92%;
+    }
+}
+.swiper-container *{
+    -webkit-animation-fill-mode: forwards !important;
+    animation-fill-mode: forwards !important;
+}
+.safety-bg1,
+.safety-bg2{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.safety-bg1{
+    height: 3.5rem;
+    background-image: url(../../../src/img/company/safety-bg3.png);
+}
+.safety-bg2{
+    height: 3.4rem;
+    background-image: url(../../../src/img/company/safety-bg2.png);
+}
+.safety-1 .bg,
+.safety-3 .bg{
+    bottom: 0;
+}
+.safety-4-2 .bg{
+    top: 34.33%;
+}
+.safety-2 .bg,
+.safety-4-1 .bg,
+.safety-4-3 .bg,
+.safety-6 .bg{
+    bottom: .36rem;
+}
+.safety-5 .bg{
+    top: 35%;
+}
+.safety-1 .title{
+    width: 2.66rem;
+    height: 1.02rem;
+    background-image: url(../../../src/img/company/safety1-title.png);
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+}
+.safety .coin{
+    width: 28px;
+    height: 28px;
+    background-image: url(../../img/company/safety-coin.png);
+    margin: -webkit-calc(50% - 14px) auto 0;
+    margin: calc(50% - 14px) auto 0;
+    display: block;
+}
+.safety .icon{
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: .43rem;
+    position: relative;
+    margin: .8rem auto;
+}
+.safety .swiper-container-horizontal .icon{
+    margin-bottom: .1rem;
+}
+.safety-1 .icon{
+    background-image: url(../../../src/img/company/safety1-icon.png);
+    margin: .86rem auto 0;
+}
+@-webkit-keyframes fan{
+    100% {
+        width: 100%;
+    }
+}
+@keyframes fan{
+    100% {
+        width: 100%;
+    }
+}
+.safety .fan{
+    width: 0;
+    height: 1.1rem;
+    position: absolute;
+    left: 0;
+    top: 53.4%;
+    overflow: hidden;
+}
+.safety .fan84{
+    width: 0;
+}
+.swiper-slide-active .fan{
+    -webkit-animation: fan 2s linear .3s;
+    animation: fan 2s linear .3s;
+}
+.swiper-container-horizontal .fan{
+    -webkit-animation: none;
+    animation: none;
+}
+.swiper-slide-active .horizontal-active .fan{
+    -webkit-animation: fan 2s linear .8s;
+    animation: fan 2s linear .8s;
+}
+@-webkit-keyframes cross{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        height: 1.88rem;
+        opacity: 1;
+    }
+}
+@keyframes cross{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        height: 1.88rem;
+        opacity: 1;
+    }
+}
+.cross{
+    width: 5.18rem;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 64.66%;
+    left: 1.36rem;
+    opacity: 0;
+}
+.swiper-slide-active .cross{
+    -webkit-animation: cross 1.5s linear 1.5s;
+    animation: cross 1.5s linear 1.5s;
+}
+.swiper-container-horizontal .cross{
+    -webkit-animation: none;
+    animation: none;
+}
+.swiper-slide-active .horizontal-active .cross{
+    -webkit-animation: cross 1s linear 1.8s;
+    animation: cross 1s linear 1.8s;
+}
+.swiper-slide-active .horizontal-active .sub-title{
+    -webkit-animation: slideUP .5s linear .3s;
+    animation: slideUP .5s linear .3s;
+}
+@-webkit-keyframes circularCoin{
+     from{
+         -webkit-transform: rotate(0turn) translateY(-2.4rem) translateY(50%) rotate(1turn);
+     }
+     to {
+         -webkit-transform: rotate(1turn) translateY(-2.4rem) translateY(50%) rotate(0turn);
+     }
+ }
+@keyframes circularCoin{
+    from{
+        transform: rotate(0turn) translateY(-2.4rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.4rem) translateY(50%) rotate(0turn);
+    }
+}
+.swiper-slide-active .coin{
+    -webkit-animation: circularCoin 12s linear infinite;
+    animation: circularCoin 12s linear infinite;
+}
+@-webkit-keyframes starInner{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-1.88rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-1.88rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes starInner{
+    from{
+        transform: rotate(0turn) translateY(-1.88rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-1.88rem) translateY(50%) rotate(0turn);
+    }
+}
+.safety .star{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-image: url(../../img/company/safety3-star.png);
+    margin: -webkit-calc(50% - 8px) auto 0;
+    margin: calc(50% - 8px) auto 0;
+}
+.swiper-slide-active .star{
+    -webkit-animation: starInner 12s linear -1.8s infinite;
+    animation: starInner 12s linear -1.8s infinite;
+}
+.swiper-container-horizontal .star{
+    -webkit-animation: none;
+    animation: none;
+}
+.swiper-slide-active .horizontal-active .star{
+    -webkit-animation: starInner 12s linear -1.8s infinite;
+    animation: starInner 12s linear -1.8s infinite;
+}
+@-webkit-keyframes circular16{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.26rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.26rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circular16{
+    from{
+        transform: rotate(0turn) translateY(-2.26rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.26rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circular12{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.22rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.22rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circular12{
+    from{
+        transform: rotate(0turn) translateY(-2.22rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.22rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circular10{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.20rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.20rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circular10{
+    from{
+        transform: rotate(0turn) translateY(-2.20rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.20rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circular8{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.18rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.18rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circular8{
+    from{
+        transform: rotate(0turn) translateY(-2.18rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.18rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circular6{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.16rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.16rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circular6{
+    from{
+        transform: rotate(0turn) translateY(-2.16rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.16rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circularInner10{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-1.82rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-1.82rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circularInner10{
+    from{
+        transform: rotate(0turn) translateY(-1.82rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-1.82rem) translateY(50%) rotate(0turn);
+    }
+}
+@-webkit-keyframes circularInner6{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-1.78rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-1.78rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circularInner6{
+    from{
+        transform: rotate(0turn) translateY(-1.78rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-1.78rem) translateY(50%) rotate(0turn);
+    }
+}
+.safety .circle16{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin: -webkit-calc(50% - 8px) auto 0;
+    margin: calc(50% - 8px) auto 0;
+    display: block;
+}
+.safety .circle12{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin: -webkit-calc(50% - 6px) auto 0;
+    margin: calc(50% - 6px) auto 0;
+    display: block;
+}
+.safety .circle10{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: -webkit-calc(50% - 5px) auto 0;
+    margin: calc(50% - 5px) auto 0;
+    display: block;
+}
+.safety .circle8{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: -webkit-calc(50% - 4px) auto 0;
+    margin: calc(50% - 4px) auto 0;
+    display: block;
+}
+.safety .circle6{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: -webkit-calc(50% - 3px) auto 0;
+    margin: calc(50% - 3px) auto 0;
+    display: block;
+}
+.safety .circle-box{
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: .43rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.safety .circle-inner{
+    width: 3.44rem;
+    height: 3.44rem;
+    padding: .81rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@-webkit-keyframes slideUP{
+    0% {
+        -webkit-transform: translateY(50px);
+        opacity: 0.1;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUP{
+    0% {
+        transform: translateY(50px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.swiper-slide-active .icon{
+    -webkit-animation: slideUP .5s linear;
+    animation: slideUP .5s linear;
+}
+.swiper-container-horizontal .icon{
+    -webkit-animation: none;
+    animation: none;
+}
+.swiper-slide-active .horizontal-active .icon{
+    -webkit-animation: slideUP .5s linear;
+    animation: slideUP .5s linear;
+}
+.safety-1 .circle12{
+    background: #fdad3c;
+}
+.safety-1 .circle10{
+    background: #86d8c8;
+}
+.safety-1 .circle6{
+    background: #afddff;
+}
+.swiper-slide-active.safety-1 .circle12{
+    -webkit-animation: circular12 12s linear infinite -6s;
+    animation: circular12 12s linear infinite -6s;
+}
+.swiper-slide-active.safety-1 .circle10{
+    -webkit-animation: circularInner10 12s linear infinite -3s;
+    animation: circularInner10 12s linear infinite -3s;
+}
+.swiper-slide-active.safety-1 .circle6{
+    -webkit-animation: circular6 12s linear infinite -9s;
+    animation: circular6 12s linear infinite -9s;
+}
+.text{
+    width: 5.18rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #575757;
+    font-size: .28rem;
+    text-align: left;
+    line-height: 1.5;
+}
+.safety-2 .icon-bg{
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: .43rem;
+    top: .43rem;
+    background-image: url(../../img/company/safety2-icon.png);
+}
+.safety-2 .shield{
+    width: 1.34rem;
+    height: 1.34rem;
+    display: block;
+    margin: -webkit-calc(50% - 0.67rem) auto 0;
+    margin: calc(50% - 0.67rem) auto 0;
+    background-image: url(../../img/company/safety2-shield.png);
+}
+@-webkit-keyframes shield{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.1rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.1rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes shield{
+    from{
+        transform: rotate(0turn) translateY(-2.1rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.1rem) translateY(50%) rotate(0turn);
+    }
+}
+.swiper-slide-active.safety-2 .shield{
+    -webkit-animation: shield 12s linear infinite -7s;
+    animation: shield 12s linear infinite -7s;
+}
+.safety-2 .circle10{
+    background: #9ce5eb;
+}
+.safety-2 .circle6{
+    background: #8dcdfd;
+}
+.swiper-slide-active.safety-2 .circle10{
+    -webkit-animation: circularInner10 12s linear infinite -3s;
+    animation: circularInner10 12s linear infinite -3s;
+}
+.swiper-slide-active.safety-2 .circle6{
+    -webkit-animation: circular6 12s linear infinite -9s;
+    animation: circular6 12s linear infinite -9s;
+}
+.safety-2 .title{
+    width: 3.86rem;
+    height: 1.04rem;
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+    background-image: url(../../img/company/safety2-title.png);
+}
+.swiper-slide-active.safety-1 .circle12{
+    -webkit-animation: circular12 12s linear infinite -6s;
+    animation: circular12 12s linear infinite -6s;
+}
+.swiper-slide-active.safety-1 .circle10{
+    -webkit-animation: circularInner10 12s linear infinite -3s;
+    animation: circularInner10 12s linear infinite -3s;
+}
+.swiper-slide-active.safety-1 .circle6{
+    -webkit-animation: circular6 12s linear infinite -9s;
+    animation: circular6 12s linear infinite -9s;
+}
+.safety-3 .icon-bg{
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: .43rem;
+    top: .43rem;
+    background-image: url(../../img/company/safety3-icon.png);
+}
+.safety-3 .circle12{
+    background: #86d8c8;
+}
+.safety-3 .circle6{
+    background: #afddff;
+}
+.swiper-slide-active.safety-3 .circle12{
+    -webkit-animation: circular12 12s linear infinite -4.5s;
+    animation: circular12 12s linear infinite -4.5s;
+}
+.swiper-slide-active.safety-3 .circle6{
+    -webkit-animation: circular6 12s linear infinite -10s;
+    animation: circular6 12s linear infinite -10s;
+}
+.safety-3 .title{
+    width: 3.86rem;
+    height: 1.04rem;
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+    background-image: url(../../img/company/safety3-title.png);
+}
+.safety-4 .icon-bg{
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: .43rem;
+    top: .43rem;
+}
+.safety-4-1 .icon-bg{
+    background-image: url(../../img/company/safety4-1-icon.png);
+}
+.safety-4-1 .line{
+    width: 1.68rem;
+    height: .76rem;
+    display: inline-block;
+    background-image: url(../../img/company/safety4-1-line.png);
+}
+.safety-4-1 .line-box{
+    width: 0;
+    height: .76rem;
+    position: absolute;
+    left: .84rem;
+    top: 2.1rem;
+    overflow: hidden;
+}
+@-webkit-keyframes line{
+    100% {
+        width: 1.68rem;
+    }
+}
+@keyframes line{
+    100% {
+        width: 1.68rem;
+    }
+}
+.swiper-slide-active .horizontal-active .line-box{
+    -webkit-animation: line 1s linear 1s;
+    animation: line 1s linear 1s;
+}
+.safety-4-1 .user{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: -webkit-calc(50% - 5px) auto 0;
+    margin: calc(50% - 5px) auto 0;
+    background-image: url(../../img/company/safety4-1-user.png);
+}
+@-webkit-keyframes circularUser{
+    from{
+        -webkit-transform: rotate(0turn) translateY(-2.34rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        -webkit-transform: rotate(1turn) translateY(-2.34rem) translateY(50%) rotate(0turn);
+    }
+}
+@keyframes circularUser{
+    from{
+        transform: rotate(0turn) translateY(-2.34rem) translateY(50%) rotate(1turn);
+    }
+    to {
+        transform: rotate(1turn) translateY(-2.34rem) translateY(50%) rotate(0turn);
+    }
+}
+.swiper-slide-active .horizontal-active.safety-4-1 .user{
+    -webkit-animation: circularUser 12s linear infinite -2s;
+    animation: circularUser 12s linear infinite -2s;
+}
+.safety-4-1 .circle12{
+    background: #fde777;
+}
+.safety-4-1 .circle10{
+    background: #b4eafb;
+}
+.safety-4-1 .circle6{
+    background: #86d8c8;
+}
+.swiper-slide-active .horizontal-active.safety-4-1 .circle12{
+    -webkit-animation: circular12 12s linear infinite -6.5s;
+    animation: circular12 12s linear infinite -6.5s;
+}
+.swiper-slide-active .horizontal-active.safety-4-1 .circle10{
+    -webkit-animation: circular10 12s linear infinite -9s;
+    animation: circular10 12s linear infinite -9s;
+}
+.swiper-slide-active .horizontal-active.safety-4-1 .circle6{
+    -webkit-animation: circular6 12s linear infinite -1s;
+    animation: circular6 12s linear infinite -1s;
+}
+.safety-4 .title{
+    width: 3.86rem;
+    height: 1.04rem;
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+    background-image: url(../../img/company/safety4-title.png);
+}
+.safety-4 .sub-title{
+    width: 100%;
+    text-align: center;
+    color: #575757;
+    font-size: .3rem;
+    margin: 0 auto;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+}
+.safety-4-2 .icon-bg{
+    background-image: url(../../img/company/safety4-2-icon.png);
+}
+.safety-4-2 .circle12{
+    background: #b4eafb;
+}
+.safety-4-2 .circle8{
+    background: #fdf1b8;
+}
+.safety-4-2 .circle6{
+    background: #86d8c8;
+}
+.swiper-slide-active .horizontal-active.safety-4-2 .circle12{
+    -webkit-animation: circular12 12s linear infinite -6.5s;
+    animation: circular12 12s linear infinite -6.5s;
+}
+.swiper-slide-active .horizontal-active.safety-4-2 .circle8{
+    -webkit-animation: circular8 12s linear infinite -9s;
+    animation: circular8 12s linear infinite -9s;
+}
+.swiper-slide-active .horizontal-active.safety-4-2 .circle6{
+    -webkit-animation: circular6 12s linear infinite -1s;
+    animation: circular6 12s linear infinite -1s;
+}
+.safety-4-3 .icon-bg{
+    background-image: url(../../img/company/safety4-3-icon.png);
+}
+.safety-4-3 .star1,
+.safety-6 .star1{
+    width: .5rem;
+    height: .58rem;
+    position: absolute;
+    left: 2.1rem;
+    top: .52rem;
+    background-image: url(../../img/company/safety4-3-star.png);
+    opacity: 0;
+}
+.safety-4-3 .star2,
+.safety-6 .star2{
+    width: .32rem;
+    height: .36rem;
+    position: absolute;
+    left: 1.5rem;
+    top: .8rem;
+    background-image: url(../../img/company/safety4-3-star2.png);
+    opacity: 0;
+}
+.swiper-slide-active .star1 {
+    -webkit-animation: twinkle 1.5s ease-in-out 1s  alternate;
+    animation: twinkle 1.5s ease-in-out 1s alternate;
+}
+.swiper-slide-active .star2 {
+    -webkit-animation: twinkle 1s ease-in-out 1s  alternate;
+    animation: twinkle 1s ease-in-out 1s  alternate;
+}
+.swiper-container-horizontal .star1,
+.swiper-container-horizontal .star2 {
+    -webkit-animation: none;
+    animation: none;
+}
+.swiper-slide-active .horizontal-active .star1{
+    -webkit-animation: twinkle 1.5s ease-in-out 1s  alternate;
+    animation: twinkle 1.5s ease-in-out 1s alternate;
+}
+.swiper-slide-active .horizontal-active .star2{
+    -webkit-animation: twinkle 1s ease-in-out 1s  alternate;
+    animation: twinkle 1s ease-in-out 1s  alternate;
+}
+@-webkit-keyframes twinkle{
+    0%{
+        opacity: 0.1;
+        -webkit-transform: scale(0) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(360deg);
+    }
+}
+@keyframes twinkle{
+    0%{
+        opacity: 0.1;
+        transform: scale(0) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+.safety-4-3 .circle16{
+    background: #b4eafb;
+}
+.safety-4-3 .circle8{
+    background: #fde777;
+}
+.safety-4-3 .circle6{
+    background: #86d8c8;
+}
+.swiper-slide-active .horizontal-active.safety-4-3 .circle16{
+    -webkit-animation: circular16 12s linear infinite -6.5s;
+    animation: circular16 12s linear infinite -6.5s;
+}
+.swiper-slide-active .horizontal-active.safety-4-3 .circle8{
+    -webkit-animation: circular8 12s linear infinite -9s;
+    animation: circular8 12s linear infinite -9s;
+}
+.swiper-slide-active .horizontal-active.safety-4-3 .circle6{
+    -webkit-animation: circular6 12s linear infinite -1s;
+    animation: circular6 12s linear infinite -1s;
+}
+.safety-5 .icon-bg{
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: .43rem;
+    top: .43rem;
+    background-image: url(../../img/company/safety5-icon.png);
+}
+.safety-5 .circle12{
+    background: #fde777;
+}
+.safety-5 .circle10{
+    background: #afddff;
+}
+.safety-5 .circle6{
+    background: #86d8c8;
+}
+.swiper-slide-active.safety-5 .circle12{
+    -webkit-animation: circular12 12s linear infinite -4.5s;
+    animation: circular12 12s linear infinite -4.5s;
+}
+.swiper-slide-active.safety-5 .circle10{
+    -webkit-animation: circular10 12s linear infinite -10s;
+    animation: circular10 12s linear infinite -10s;
+}
+.swiper-slide-active.safety-5 .circle6{
+    -webkit-animation: circularInner6 12s linear infinite -6s;
+    animation: circularInner6 12s linear infinite -6s;
+}
+.safety-5 .title{
+    width: 3.86rem;
+    height: 1.04rem;
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+    background-image: url(../../img/company/safety5-title.png);
+}
+.safety-6 .icon-bg{
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: .43rem;
+    top: .43rem;
+    background-image: url(../../img/company/safety6-icon.png);
+}
+.safety-6 .star1{
+    top: .54rem;
+    left: 2.94rem;
+}
+.safety-6 .star2{
+    top: 1.32rem;
+    left: 3.32rem;
+}
+.safety-6 .circle12{
+    background: #9ce5eb;
+}
+.safety-6 .circle10{
+    background: #eedf9c;
+}
+.safety-6 .circle6{
+    background: #8dcdfd;
+}
+.swiper-slide-active.safety-6 .circle12{
+    -webkit-animation: circular12 12s linear infinite -6s;
+    animation: circular12 12s linear infinite -6s;
+}
+.swiper-slide-active.safety-6 .circle10{
+    -webkit-animation: circular10 12s linear infinite -1s;
+    animation: circular10 12s linear infinite -1s;
+}
+.swiper-slide-active.safety-6 .circle6{
+    -webkit-animation: circular6 12s linear infinite -10s;
+    animation: circular6 12s linear infinite -10s;
+}
+.safety-6 .title{
+    width: 2.26rem;
+    height: 1.04rem;
+    position: absolute;
+    bottom: 0;
+    left: 1.1rem;
+    background-image: url(../../img/company/safety6-title.png);
+}

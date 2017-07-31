@@ -1,0 +1,95 @@
+body{
+	background-color: #f2f2f2;
+}
+.coupon-cont{
+    padding: 0 15px;
+}
+.coupon-cont li{
+    position: relative;
+    display: -webkit-box;
+    margin-top: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.coupon-cont li:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 65px;
+    height: 65px;
+    top: -10px;
+    right: -10px;
+}	
+.fanxian:after{
+    background: url(../../img/fan-ico.png) no-repeat left top;
+    background-size: 65px 65px;
+}
+.jiaxi:after{
+    background: url(../../img/jia-ico.png) no-repeat left top;
+    background-size: 65px 65px;
+}
+.cp-price{
+    width: 100px;
+    padding: 25px 8px 8px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+.cp-price em{
+    font-size: 3.0rem;
+}
+.fanxian .cp-price{
+    background: #ffab48;
+}
+.cp-price span{
+    display: block;
+    padding-top: 5px;
+    text-align: left;
+}
+.cp-info{
+    -webkit-box-flex:1;
+    color: #575757;
+}
+.info-head{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
+    line-height: 22px;
+}
+.cp-info h2{
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+.info-time{
+    line-height: 28px;
+    text-align: right;
+    padding-right: 10px;
+}
+.none-info{
+    padding: 180px 0 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.none-ico{
+    display: block;
+    width: 70px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 20px;
+    margin: 0 auto 10px;
+    background-color: #b3b3b3;
+}
+.none-ico:after{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+    content: '';
+    background: url(../../img/none.png) no-repeat;
+    background-size: 40px 30px;
+}
+.bot{
+    display: none;
+    color: #b2b2b2;
+    text-align: center;
+}

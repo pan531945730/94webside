@@ -1,0 +1,131 @@
+.ac-cont{
+    position: relative;
+}
+.rule{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    width: 33%;
+    height: 8%;
+}
+.dlg-mask{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.rule-dlg{
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-wrap{
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.dlg-info{
+    border:2px solid #eb6100;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 11% 5px 10px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #211613;
+    font-size: 1.3rem;
+}
+.dlg-tit{
+    margin-bottom: -13%;
+}
+.rank-btn{
+    position: absolute;
+    top: 43%;
+    right: 0;
+    width: 26%;
+    height: 18%;
+}
+.rank-cont{
+    max-height: 320px;
+    overflow-y:auto;
+}
+.rank-info{
+   
+}
+.rank-info li,.rank-mod{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    width: 100%;
+    line-height: 32px; 
+}
+.rank-info li span,.rank-mod span{
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center; 
+}
+.rank-info span:nth-child(1),.rank-mod span:nth-child(1){
+    width: 12%;
+}
+.rank-info span:nth-child(2),.rank-mod span:nth-child(2){
+    width: 30%;
+}
+.rank-info span:nth-child(3),.rank-mod span:nth-child(3){
+    width: 15%;
+}
+.rank-info span:nth-child(4),.rank-mod span:nth-child(4){
+    width: 43%;
+}
+.rank{
+    height: 22px;
+    line-height: 22px; 
+}
+.rank01{
+    background: url(../../../img/rank01.png) no-repeat center center;
+    background-size: 16px 21px;
+}
+.rank02{
+    background: url(../../../img/rank02.png) no-repeat center center;
+    background-size: 16px 21px;
+}
+.rank03{
+    background: url(../../../img/rank03.png) no-repeat center center;
+    background-size: 16px 21px;
+}
+.rank-my{
+    padding-top: 6px;
+    border-top: 1px solid #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.rank-tit{
+    font-weight: bold;
+}
+.iplay{
+   position: absolute;
+   bottom: 7%;
+   left: 26%;
+   width: 50%;
+   height: 10%;
+}
+@media screen and (min-height: 480px) {
+    .rank-cont{
+        max-height: 300px;
+    }
+    .rank-info li, .rank-mod{
+        line-height: 30px;
+    }
+    .rule-dlg{
+        left: 12%;
+        right: 12%;
+    }
+}

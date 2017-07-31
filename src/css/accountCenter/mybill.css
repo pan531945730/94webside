@@ -1,0 +1,86 @@
+html {
+    background-color: #f2f2f2;
+}
+.mb-cont{
+    padding-bottom: 50px;
+}
+.mb-info{
+    padding: 0 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.mb-info li{
+    display: -webkit-box;
+    padding: 12px 0;
+    line-height: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.mb-info li:last-child{
+    border-bottom: none;
+}
+.mb-info div{
+    -webkit-box-flex: 1;
+}
+.mb-side{
+    text-align: right;
+}
+.mb-info div p{
+    font-size: 1.4rem;
+}
+.mb-info div span{
+    color: #b2b2b2;
+}
+.incr{
+    color: #ff5959;
+}
+.redu{
+    color: #3bc21c;
+}
+.mb-app{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 96%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 2%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.mb-app em{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../../img/tip.png) no-repeat;
+    background-size: 19px;
+}
+.none-info{
+    padding: 180px 0 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.none-ico{
+    display: block;
+    width: 70px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 20px;
+    margin: 0 auto 10px;
+    background-color: #b3b3b3;
+}
+.none-ico:after{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto;
+    content: '';
+    background: url(../../img/none.png) no-repeat;
+    background-size: 40px 30px;
+}
+.bot{
+    display: none;
+    color: #b2b2b2;
+    text-align: center;
+}

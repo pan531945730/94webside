@@ -1,0 +1,453 @@
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; height: 100%; font-size: 100px;}
+html,body, div, ul, form, ol, ul, li, a, input, p, span, i, b, h1, h2, h3, h4, h5, h6, select, option, table,td,button,textarea{ -webkit-tap-highlight-color: rgba(0, 0, 0, 0); tap-highlight-color: rgba(0, 0, 0, 0);  border:0; margin: 0; padding: 0; background-size: 100% 100% !important;  -webkit-user-select: none;  -ms-user-select: none;  -khtml-user-select: none;}
+body {font-family: 'helvetica', 'Microsoft YaHei', sans-serif; min-height: 100%; font-size: 14px; line-height: 1.42; color: #333; background: #002547 url(../../../img/jumpGame/bg.png); background-size: 100% 100%;}
+article, aside, footer, header, nav, section, audio, canvas, video, img { display: block; }
+
+button,input,select,textarea{font-family: 'helvetica', 'Microsoft YaHei', sans-serif; border-radius:0; border: 0; box-shadow:none; outline:0; font-size: inherit;}
+button{display:inline-block; border:0; background:none; cursor:pointer;}
+table { border-collapse: collapse; border-spacing: 0; }
+em,i{font-style: normal;}
+button,
+input { /* 1 */
+    overflow: visible;
+}
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+}
+#gameCanvas{
+    opacity: 0;
+}
+#Cocos2dGameContainer{
+    z-index: 10;
+}
+#loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    text-align: center;
+    background: url(../../../img/jumpGame/bg.png) no-repeat;
+    opacity: 0;
+}
+#loading .box{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -12px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-animation: load-flip 1.38s infinite ease-in-out;
+    animation: load-flip 1.38s infinite ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.load-front,
+.load-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.load-back {
+    background-color: #00eaff;
+    z-index: 2;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+@-webkit-keyframes load-flip {
+    0% {
+        -webkit-transform: perspective(117px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(117px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(117px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(117px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(117px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(117px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+@keyframes load-flip {
+    0% {
+        -webkit-transform: perspective(117px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(117px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(117px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(117px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(117px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(117px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+#loading label {
+    width: 100px;
+    display: none;
+}
+@-webkit-keyframes rotation {
+    10% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+    50%, 60% { transform: rotate(0deg); -webkit-transform: rotate(0deg) }
+    90% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+    100% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+}
+@keyframes rotation {
+    10% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+    50%, 60% { transform: rotate(0deg); -webkit-transform: rotate(0deg) }
+    90% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+    100% { transform: rotate(90deg); -webkit-transform: rotate(90deg) }
+}
+#orientLayer { display: none; }
+@media screen and (min-aspect-ratio: 13/8) {
+    #orientLayer {
+        display: block;
+        z-index: 100
+    }
+}
+.mod-orient-layer {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 97
+}
+.mod-orient-layer .content {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    margin-top: -75px;
+    text-align: center
+}
+.mod-orient-layer i {
+    background-image: url(../../../img/jumpGame/iphone.png);
+    display: inline-block;
+    width: 67px;
+    height: 109px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -webkit-animation: rotation infinite 1.5s ease-in-out;
+    animation: rotation infinite 1.5s ease-in-out;
+    background-size: 67px
+}
+.mod-orient-layer .desc {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+}
+.num{
+    display: inline-block;
+}
+.num-a{
+    background: url(../../../img/jumpGame/num-a.png) no-repeat;
+}
+.num-0{
+    background: url(../../../img/jumpGame/num-0.png) no-repeat;
+}
+.num-1{
+    background: url(../../../img/jumpGame/num-1.png) no-repeat;
+}
+.num-2{
+    background: url(../../../img/jumpGame/num-2.png) no-repeat;
+}
+.num-3{
+    background: url(../../../img/jumpGame/num-3.png) no-repeat;
+}
+.num-4{
+    background: url(../../../img/jumpGame/num-4.png) no-repeat;
+}
+.num-5{
+    background: url(../../../img/jumpGame/num-5.png) no-repeat;
+}
+.num-6{
+    background: url(../../../img/jumpGame/num-6.png) no-repeat;
+}
+.num-7{
+    background: url(../../../img/jumpGame/num-7.png) no-repeat;
+}
+.num-8{
+    background: url(../../../img/jumpGame/num-8.png) no-repeat;
+}
+.num-9{
+    background: url(../../../img/jumpGame/num-9.png) no-repeat;
+}
+.game-bg,
+.share-tip,
+.how-play,
+.rule,
+.login
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.game-bg{
+    z-index: 1;
+}
+.game-over{
+    width: 4.42rem;
+    height: 4.92rem;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -2.21rem;
+    background: url(../../../img/jumpGame/get-bg.png) no-repeat;
+    z-index: 11;
+    text-align: center;
+    display: none;
+}
+.game-over .rank{
+    width: 3.68rem;
+    height: .26rem;
+    display: inline-block;
+    background: url(../../../img/jumpGame/rank.png) no-repeat;
+    margin-top: 1.4rem;
+}
+.game-over .rank span{
+    vertical-align: top;
+    display: inline-block;
+    margin: -0.24rem 0 0 1.36rem;
+    white-space: nowrap;
+    width: 1rem;
+}
+.game-over .rank .num{
+    width: .34rem;
+    height: .58rem;
+    margin-left: -2px;
+}
+.game-over .redbag{
+    width: 3.68rem;
+    height: .42rem;
+    display: inline-block;
+    background: url(../../../img/jumpGame/red-bag.png) no-repeat;
+    margin-top: .5rem;
+}
+.game-over .redbag span{
+    vertical-align: top;
+    display: inline-block;
+    margin: -0.4rem 0 0 .3rem;
+    white-space: nowrap;
+}
+.game-over .redbag .num{
+    width: .68rem;
+    height: 1.16rem;
+    margin-left: -4px;
+}
+.game-over button{
+    width: 1.92rem;
+    height: .6rem;
+    display: inline-block;
+    background: url(../../../img/jumpGame/get.png) no-repeat;
+    margin-top: .44rem;
+}
+.game-over .down{
+    width: 3.62rem;
+    height: .68rem;
+    display: inline-block;
+    background: url(../../../img/jumpGame/down.png) no-repeat;
+    margin-top: .15rem;
+}
+div img{
+    width: inherit;
+    height: inherit;
+}
+.share-tip, .how-play, .rule{
+    z-index: 12;
+}
+.login{
+    z-index: 13;
+    display: none;
+    background: rgba(0,0,0,.3);
+}
+.login-box{
+    width: 5.16rem;
+    height: 5.78rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -2.89rem 0 0 -2.58rem;
+}
+.login-box .title{
+    height: .74rem;
+    font-size: 0;
+}
+.login-box .title span{
+    width: 2.66rem;
+    height: inherit;
+    display: inline-block;
+    background: #ee653b;
+    box-sizing: border-box;
+    border: 2px solid #32050a;
+    border-radius: .26rem;
+    position: relative;
+}
+.login-box .title i{
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+.login-box .vip-yes i{
+    background: url(../../../img/jumpGame/vip-yes.png) no-repeat;
+}
+.login-box .vip-no{
+    margin-left: -11px;
+}
+.login-box .vip-no i{
+    background: url(../../../img/jumpGame/vip-no.png) no-repeat;
+}
+.login-box .title .on{
+    background: #ffff00;
+    z-index: 2;
+}
+.login-box .title .on i{
+    top: 0;
+}
+.login-box .content{
+    width: 5.16rem;
+    height: 5.16rem;
+    background: url(../../../img/jumpGame/login-bg.png) no-repeat;
+    position: relative;
+    top: -.14rem;
+    overflow: hidden;
+}
+.login-box .btn-box{
+    width: 100%;
+    text-align: center;
+    margin-top: .1rem;
+}
+.login-box .btn-box button{
+    width: 1.92rem;
+    height: .88rem;
+}
+.login-box .btn-box .cancel{
+    margin-right: .34rem;
+    background: url(../../../img/jumpGame/cancel.png) no-repeat;
+}
+.login-box .btn-box .ok{
+    background: url(../../../img/jumpGame/ok.png) no-repeat;
+}
+.login-box .form-item{
+    width: 4.2rem;
+    margin: .2rem auto 0;
+}
+.login-con .form-item{
+    margin-top: .3rem;
+}
+.login-con .btn-box{
+    margin-top: .28rem;
+}
+.register-con{
+    display: none;
+}
+.login-box .form-item:first-child{
+    margin-top: .3rem;
+}
+.login-con .form-item:first-child{
+    margin-top: .5rem;
+}
+.login-box .form-item input{
+    background: #ffff00;
+    color: #414141;
+    font-size: .3rem;
+    border-radius: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+.login-box .form-item input::-webkit-input-placeholder {
+    color: #414141;
+}
+.login-box .input-box-lg,
+.login-box .input-box-sm{
+    padding: .07rem;
+    border-radius: .24rem;
+    background: #3f0000;
+}
+.login-box .input-box-lg input{
+    padding: .14rem .32rem;
+}
+.login-box .input-box-sm{
+    display: inline-block;
+    margin-right: .08rem;
+}
+.login-box .input-box-sm input{
+    padding: .14rem .28rem;
+    width: 2.5rem;
+    font-size: .24rem;
+}
+.login-box .code-bg{
+    width: 1.38rem;
+    height: .62rem;
+    display: inline-block;
+    background: url(../../../img/jumpGame/code-bg.png) no-repeat;
+    text-align: center;
+    white-space: nowrap;
+}
+.login-box .code-text{
+    line-height: .62rem;
+    font-size: .22rem;
+    color: #ffff00;
+    font-weight: 700;
+}
+.login-box .code-pic{
+    font-size: 0;
+    line-height: .62rem;
+    vertical-align: middle;
+}
+.login-box .code-pic img{
+    display: inline-block;
+    vertical-align: middle;
+    width: .7rem;
+    height: .3rem;
+}
+.login-box .code-pic i{
+    width: .32rem;
+    height: .32rem;
+    margin-left: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../../img/jumpGame/refresh.png) no-repeat;
+}
+#toast{
+    width: 4.3rem;
+    height: 1.46rem;
+    line-height: 1.46rem;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    margin: -1.46rem 0 0 -2.15rem;
+    font-size: .36rem;
+    font-weight: 700;
+    text-align: center;
+    background: url(../../../img/jumpGame/toast.png) no-repeat;
+    display: none;
+    white-space: nowrap;
+    color: #32050a;
+}

@@ -1,0 +1,24 @@
+.pdinfo-cont{
+    padding: 15px;
+}
+.table {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 10px 0px;
+}
+.table th {
+    background-color: #538ed5;
+    color: #fff;
+}
+.table td {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.table .bblue {
+    background-color: #93cddd;
+}
+.table .cred {
+    color: #f00;
+}

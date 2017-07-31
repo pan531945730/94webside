@@ -1,0 +1,95 @@
+.rank-box {
+  background: #c7dcd3;
+  padding: 20px 0 0;
+}
+.rank-box img{width:100%; height: auto;}
+.rank-box .rank-con {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+.rank-top {
+  position: relative;
+  width: 95%;
+  max-width: 635px;
+  margin: auto;
+  z-index: 3;
+}
+.rankcontext {
+  background: #edefd7;
+  border: 5px solid #0b933a;
+  position: relative;
+  z-index: 2;
+  top: -35px;
+  padding: 20px 10px 0;
+  margin-bottom: -35px;
+}
+.rankcontext h2 {
+  padding-top: 10px;
+  max-width: 635px;
+  margin: auto;
+}
+.rank-box .rank-con .rankcontext li {
+  padding: 8px 0;
+  display: table;
+  width: 100%;
+}
+.rankcontext li span {
+  display: table-cell;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+.rankcontext li .rank-icon {
+  width: 20%;
+  height: 35px;
+  color: #221714;
+}
+.rankcontext li .rank-icon p{
+  width: 25px;
+  height: 35px;
+  line-height: 35px;
+  margin: auto;
+}
+.rankcontext li .icon1 p{
+  background-image: url(../../../img/DragonBoatFestival/DragonBoatFestival-rankicon1.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.rankcontext li .icon2 p{
+  background-image: url(../../../img/DragonBoatFestival/DragonBoatFestival-rankicon2.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.rankcontext li .icon3 p{
+  background-image: url(../../../img/DragonBoatFestival/DragonBoatFestival-rankicon3.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.rankcontext li span.rank-name {
+  width: 30%;
+}
+.rankcontext li span.rank-num {
+  width: 25%;
+}
+.rankcontext li span.rank-money {
+  width: 25%;
+  font-size: 1.8rem;
+  color: #e00404;
+}
+.rankcontext .myrank .line {
+  width: 80%;
+  height: 3px;
+  background-color: #248429;
+  margin: 10px auto 20px;
+}

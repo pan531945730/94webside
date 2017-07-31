@@ -1,0 +1,25 @@
+.unbd-info{
+    padding: 214px 15px 0 15px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.error-tip {
+    height: 20px;
+    padding-top: 8px;
+    color: #ff6666;
+    font-size: 1.4rem;
+}
+.unbd-btn {
+    display: inline-block;
+    width: 160px;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-top: 47px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #ff5959;
+}
+.dialog-confirm .info{
+    padding-top: 15px;
+}

@@ -1,0 +1,26 @@
+.fw-foot{
+    padding: 35px 0 15px;
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+.fw-logo{
+    display: block;
+    width: 145px;
+    height: 60px;
+    background: url(../../img/logo.png) no-repeat;
+    background-size: 145px 60px;
+}
+.fw-foot span:before{
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 13px;
+    margin: 0 10px;
+    background-color: #999;
+    vertical-align: middle;
+}
+.fw-foot span{
+    display: block;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,718 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+@font-face {
+  font-family: 'SentyTEA-basic';
+  src: url('../../../img/protectConsumer/SentyTEA-basic.woff') format('woff'),
+       url('../../../img/protectConsumer/SentyTEA-basic.ttf') format('truetype'),
+       url('../../../img/protectConsumer/SentyTEA-basic.svg#SentyTEA-basic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.swiper-container-vertical .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.move-ico-up{
+    position: absolute;
+    width: 12%;
+    height: 10%;
+    left: 44%;
+    bottom: 0%;
+    background: url(../../../img/protectConsumer/up.png) no-repeat center;
+    background-size: contain;
+    -webkit-animation: moveToBottom ease 1s both infinite;
+    animation: moveToBottom ease 1s both infinite; 
+}
+@-webkit-keyframes moveToBottom {
+    from { }
+    to { 
+        -webkit-transform: translateY(-30%); 
+    }
+}
+@keyframes moveToBottom {
+    from { }
+    to { 
+        transform: translateY(-30%); 
+    }
+}
+.light{
+    opacity: 0.5;
+    position: absolute;
+    width: 3%;
+    height: 2%;
+    background: url('../../../img/protectConsumer/light.png') no-repeat;
+    background-size: contain;
+}
+.light01{
+    left: 4.5%;
+    top: 41.5%;
+}
+.light02{
+    left: 13%;
+    top: 50%;
+}
+.light03{
+    left: 31.5%;
+    top: 61.5%;
+}
+.light04{
+    left: 47.5%;
+    top: 58.2%;
+}
+.light05{
+    left: 72.2%;
+    top: 62%;
+}
+.light06{
+    left: 84.8%;
+    top: 57.5%;
+}
+.pg0-tit{
+    position: absolute;
+    left: 22%;
+    top: 31%;
+    width: 57%;
+    height: 19%;
+    background: url(../../../img/protectConsumer/pg0-tit.png) no-repeat;
+    background-size: contain;
+}
+.swiper-slide-active .pg0-tit{
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+}
+@-webkit-keyframes scaleUpCenter {
+    from { 
+        opacity: 0;
+        -webkit-transform: scale(.1);
+    }
+}
+@keyframes scaleUpCenter {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.1);
+    }
+}
+.swiper-slide-active .light{
+    -webkit-animation: fade .4s ease-out both;
+    animation: fade .4s ease-out both;
+}
+@-webkit-keyframes fade {
+    from { }
+    to { opacity: 1; }
+}
+@keyframes fade {
+    from { }
+    to { opacity: 1; }
+}
+.swiper-slide-active .light01{
+    animation-delay:.4s;
+    -webkit-animation-delay:.4s;
+}
+.swiper-slide-active .light02{
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s;
+}
+.swiper-slide-active .light03{
+    animation-delay:.8s;
+    -webkit-animation-delay:.8s;
+}
+.swiper-slide-active .light04{
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+.swiper-slide-active .light05{
+    animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+}
+.swiper-slide-active .light06{
+    animation-delay:1.4s;
+    -webkit-animation-delay:1.4s;
+}
+.pg-tit{
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    width: 95%;
+    height: 29%;
+}
+.pg-1 .pg-tit{
+    background: url(../../../img/protectConsumer/pg1-tit.png) no-repeat;
+    background-size: contain;
+}
+.pg-2 .pg-tit{
+    bottom: 5%;
+    background: url(../../../img/protectConsumer/pg2-tit.png) no-repeat;
+    background-size: contain;
+}
+.pg-3 .pg-tit{
+    height: 30%;
+    bottom: 2%;
+    background: url(../../../img/protectConsumer/pg3-tit.png) no-repeat;
+    background-size: contain;
+}
+.pg-4 .pg-tit{
+    height: 30%;
+    bottom: 4%;
+    background: url(../../../img/protectConsumer/pg4-tit.png) no-repeat;
+    background-size: contain;
+}
+.swiper-slide-active .pg-tit{
+   -webkit-animation: moveFromLeft .6s ease-out both;
+   animation: moveFromLeft .6s ease-out both;
+}
+@-webkit-keyframes moveFromLeft {
+    from {
+        -webkit-transform: translate(-100%,100%);
+    }
+}
+@keyframes moveFromLeft {
+    from { 
+        transform: translate(-100%,100%);
+    }
+}
+.time{
+    position: absolute;
+    top: 7%;
+    left: 2.6%;
+    width: 3%;
+    height: 4%;
+    background: url('../../../img/protectConsumer/time.png') no-repeat;
+    background-size: contain;
+}
+.swiper-slide-active .time{
+    -webkit-animation: xyAxis 2s infinite ease alternate;
+    animation: xyAxis 2s infinite ease alternate;  
+}
+@-webkit-keyframes xyAxis {
+    0% { 
+        -webkit-transform: rotate(90deg) translateY(-451%) translateX(-146%);
+    }
+    48% {
+        -webkit-transform: rotate(90deg) translateY(-33%) translateX(-146%);
+    }
+    49%{
+        -webkit-transform: rotate(35deg) translateY(-41%) translateX(-85%);
+    }
+    50% {
+        -webkit-transform: rotate(0deg) translateY(0%) translateX(0%);
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translateY(0%)  translateY(326%);
+    }
+}
+@keyframes xyAxis {
+    0% { 
+        transform: rotate(90deg) translateY(-451%) translateX(-146%);
+    }
+    48% {
+        transform: rotate(90deg) translateY(-33%) translateX(-146%);
+    }
+    49%{
+        transform: rotate(35deg) translateY(-41%) translateX(-85%);
+    }
+    50% {
+        transform: rotate(0deg) translateY(0%) translateX(0%);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0%)  translateY(326%);
+    }
+}
+.phone-light{
+    position: absolute;
+    top: 41%;
+    left: 5.3%;
+    width: 91%;
+    height: 24%;
+    background: url('../../../img/protectConsumer/phone-light.png') no-repeat;
+    background-size: contain;
+}
+.swiper-slide-active .phone-light{
+    -webkit-animation: fadeCenter .6s infinite ease alternate;
+    animation: fadeCenter .6s infinite ease alternate; 
+}
+@-webkit-keyframes fadeCenter {
+    from { }
+    to { 
+        opacity: 0.3;
+    }
+}
+@keyframes fadeCenter {
+    from { }
+    to { 
+        opacity: 0.3;
+    }
+}
+.card{
+    position: absolute;
+    width: 19%;
+    height: 11%;
+    opacity: 0.3;
+}
+.card:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../../../img/protectConsumer/inner.png') no-repeat;
+    background-size: contain;
+    -webkit-animation: rotateLeft 1.5s linear infinite;
+    animation: rotateLeft 1.5s linear infinite;
+}
+.card:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../../../img/protectConsumer/outer.png') no-repeat;
+    background-size: contain;
+    -webkit-animation: rotateRight 3.5s linear infinite;
+    animation: rotateRight 3.5s linear infinite;
+}
+@-webkit-keyframes rotateLeft {
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(-360deg);     
+    }
+}
+@keyframes rotateLeft {
+    from{     
+        transform:rotate(0deg);     
+    }     
+    to{     
+        transform:rotate(-360deg);     
+    }
+}
+@-webkit-keyframes rotateRight {
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(360deg);     
+    }
+}
+@keyframes rotateRight {
+    from{     
+        transform:rotate(0deg);     
+    }     
+    to{     
+        transform:rotate(360deg);     
+    }
+}
+.card1{
+    top: 43%;
+    left: 11%;
+    background: url('../../../img/protectConsumer/card1.png') no-repeat;
+    background-size: contain;
+}
+.card2{
+    top: 35%;
+    left: 30%;
+    background: url('../../../img/protectConsumer/card2.png') no-repeat;
+    background-size: contain;
+}
+.card3{
+    top: 37%;
+    left: 53%;
+    background: url('../../../img/protectConsumer/card3.png') no-repeat;
+    background-size: contain;
+}
+.card4{
+    top: 34%;
+    left: 76%;
+    background: url('../../../img/protectConsumer/card4.png') no-repeat;
+    background-size: contain;
+}
+.custom{
+    opacity: 1;
+    -webkit-animation: upDown .5s linear infinite;
+    animation: upDown .5s linear infinite;
+}
+@-webkit-keyframes upDown {
+    from { }
+    to { 
+        transform: translateY(5%); 
+    }
+}
+@keyframes upDown {
+    from { }
+    to { 
+        transform: translateY(5%); 
+    }
+}
+.custom-name{
+    position: absolute;
+    width: 61%;
+    height: 6%;
+    left: 20%;
+    bottom: 20%;
+    background: transparent;
+    border: none;
+    text-align: center;
+    color: #fff3c1;
+    font-size: 2rem;
+}
+input::-webkit-input-placeholder { 
+    color: #fff3c1; 
+} 
+.custom-btn{
+    position: absolute;
+    width: 68%;
+    height: 8%;
+    left: 16%;
+    bottom: 10.5%;
+}
+.custom-error{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 7%;
+    color: #fff3c1;
+    font-size: 1.4rem;
+}
+.card-dlg{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+.made01{
+    position: absolute;
+    width: 86%;
+    height: 39%;
+    left: 7%;
+    top: 17.5%;
+    background: url('../../../img/protectConsumer/made01.png') no-repeat center center;
+    background-size: contain;
+}
+.made-tit{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 18%;
+}
+.card1-01{
+    background: url('../../../img/protectConsumer/card1-01.png') no-repeat center center;
+    background-size: contain;
+}
+.card2-01{
+    background: url('../../../img/protectConsumer/card2-01.png') no-repeat center center;
+    background-size: contain;
+}
+.card3-01{
+    background: url('../../../img/protectConsumer/card3-01.png') no-repeat center center;
+    background-size: contain;
+}
+.card4-01{
+    background: url('../../../img/protectConsumer/card4-01.png') no-repeat center center;
+    background-size: contain;
+}
+.made-bot{
+    position: absolute;
+    width: 77%;
+    height: 8%;
+    left: 12%;
+    bottom: -4%;
+    background: url('../../../img/protectConsumer/made02.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:.4s;
+    -webkit-animation-delay:.4s;
+}
+.made-bot:before{
+    position: absolute;
+    content: '';
+    width: 128%;
+    height: 1173%;
+    bottom: -253%;
+    left: -15%;
+    background: url('../../../img/protectConsumer/made03.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: fadeCenter .6s infinite ease alternate;
+    animation: fadeCenter .6s infinite ease alternate; 
+}
+.made-sta{
+    position: absolute;
+    width: 100%;
+    height: 47%;
+    top: 37%;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+}
+.made-sta .made-name{
+    position: absolute;
+    width: 35%;
+    right: 18%;
+    bottom: 14%;
+    font-size: 2.2rem;
+    font-family: 'SentyTEA-basic';
+    color: #fff;
+    text-align: center;
+}
+.card2-02 .made-name,.card3-02 .made-name{
+    color: #000;
+}
+.card1-02{
+    background: url('../../../img/protectConsumer/card1-02.png') no-repeat center center;
+    background-size: contain;
+}
+.card2-02{
+    background: url('../../../img/protectConsumer/card2-02.png') no-repeat center center;
+    background-size: contain;
+}
+.card3-02{
+    background: url('../../../img/protectConsumer/card3-02.png') no-repeat center center;
+    background-size: contain;
+}
+.card4-02{
+    background: url('../../../img/protectConsumer/card4-02.png') no-repeat center center;
+    background-size: contain;
+}
+.made-des{
+    position: absolute;
+    width: 56%;
+    height: 2.6%;
+    top: 60.5%;
+    left: 22%;
+}
+.card1-03{
+    height: 8%;
+    background: url('../../../img/protectConsumer/card1-03.png') no-repeat center center;
+    background-size: contain;
+}
+.card2-03{
+    width: 90%;
+    left: 5%;
+    background: url('../../../img/protectConsumer/card2-03.png') no-repeat center center;
+    background-size: contain;
+}
+.card3-03{
+    background: url('../../../img/protectConsumer/card3-03.png') no-repeat center center;
+    background-size: contain;
+}
+.card4-03{
+    background: url('../../../img/protectConsumer/card4-03.png') no-repeat center center;
+    background-size: contain;
+}
+.made-buy{
+    position: absolute;
+    width: 84%;
+    height: 9%;
+    bottom: 21%;
+    left: 8%;
+    background: url('../../../img/protectConsumer/made04.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:1.6s;
+    -webkit-animation-delay:1.6s;
+}
+.made-reg{
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    bottom: 14%;
+    left: 20%;
+    background: url('../../../img/protectConsumer/made05.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:1.6s;
+    -webkit-animation-delay:1.6s;
+}
+.made-also{
+    display: none;
+    position: absolute;
+    width: 60%;
+    height: 9%;
+    bottom: 21%;
+    left: 20%;
+    background: url('../../../img/protectConsumer/made08.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:1.6s;
+    -webkit-animation-delay:1.6s;
+}
+.made-share{
+    position: absolute;
+    width: 74%;
+    height: 9%;
+    top: 7%;
+    left: 7%;
+    background: url('../../../img/protectConsumer/made06.png') no-repeat center center;
+    background-size: contain;
+    -webkit-animation: scaleUpCenter .4s ease-out both;
+    animation: scaleUpCenter .4s ease-out both;
+    animation-delay:2s;
+    -webkit-animation-delay:2s;
+}
+.made-share:after{
+    position: absolute;
+    content: '';
+    width: 53%;
+    height: 77%;
+    top: -25%;
+    left: 102%;
+    background: url('../../../img/protectConsumer/made07.png') no-repeat left bottom;
+    background-size: contain;
+    -webkit-animation: rectUpRight .6s ease both;
+    animation: rectUpRight .6s ease both;
+    animation-delay:2.4s;
+    -webkit-animation-delay:2.4s;
+}
+@-webkit-keyframes rectUpRight {
+    0% { 
+        clip: rect(0px,0px,133px,0px);
+    }
+    30% { 
+        clip: rect(0px,13px,133px,0px);
+    }
+    60% {
+        clip: rect(0px,51px,133px,0px);
+    }
+    100%{
+        clip: rect(0px,74px,133px,0px);
+    }
+}
+@keyframes rectUpRight {
+    0% { 
+        clip: rect(0px,0px,133px,0px);
+    }
+    30% { 
+        clip: rect(0px,13px,133px,0px);
+    }
+    60% {
+        clip: rect(0px,51px,133px,0px);
+    }
+    100%{
+        clip: rect(0px,74px,133px,0px);
+    }
+}
+@media screen and (max-height:480px) {
+    .pg-tit{
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+        left: 3%;
+        bottom: 7%;
+    }
+    .pg-2 .pg-tit{
+        bottom: 4%;
+        height: 32%;
+    }
+    .pg-3 .pg-tit,.pg-4 .pg-tit{
+        bottom: 1%;
+        height: 34%;
+    }
+    .time{
+        left: 2.8%;
+    }
+    @-webkit-keyframes xyAxis {
+        0% { 
+            -webkit-transform: rotate(90deg) translateY(-451%) translateX(-117%);
+        }
+        48% {
+            -webkit-transform: rotate(90deg) translateY(-33%) translateX(-117%);
+        }
+        49%{
+            -webkit-transform: rotate(35deg) translateY(-41%) translateX(-58%);
+        }
+        50% {
+            -webkit-transform: rotate(0deg) translateY(0%) translateX(0%);
+        }
+        100%{
+            -webkit-transform: rotate(0deg) translateY(0%)  translateY(326%);
+        }
+    }
+    @keyframes xyAxis{
+        0% { 
+            transform: rotate(90deg) translateY(-451%) translateX(-117%);
+        }
+        48% {
+            transform: rotate(90deg) translateY(-33%) translateX(-117%);
+        }
+        49%{
+            transform: rotate(35deg) translateY(-41%) translateX(-58%);
+        }
+        50% {
+            transform: rotate(0deg) translateY(0%) translateX(0%);
+        }
+        100%{
+            transform: rotate(0deg) translateY(0%)  translateY(326%);
+        }
+    }
+    .made-bot:before{
+        bottom: -214%;
+    }
+    .made-bot{
+        bottom: -3px;
+    }
+    .made-sta .made-name{
+        font-size: 2rem;
+    }
+    .phone-light{
+        top: 38%;
+        left: 5%;
+        transform: rotate(2deg);
+        height: 28%;
+    }
+}
